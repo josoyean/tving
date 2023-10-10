@@ -16,7 +16,6 @@ const swiperImg = (swiperNum) =>{
   for (let index = 0; index < 11; index++) {
     let num = index % 5;
     imgNum.push( <SwiperSlide key={index}> <img src={process.env.PUBLIC_URL+`/images/${swiperNum}${num}.webp`}  key={index} alt='' /></SwiperSlide>)
-    
   }
   return imgNum 
 }
