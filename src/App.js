@@ -18,6 +18,7 @@ const Layout = ()=>{
 }
 
 function App() {
+  // window.location.href='/';
   return (
     <div className="App">
     <Routes>
