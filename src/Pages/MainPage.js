@@ -18,7 +18,6 @@ const MainPage = () => {
     <Row title='Action Movies' id='AM' fetchUrl={requests.fatchActionMovies}></Row>
     <Row title='Comedy Movies' id='CN' fetchUrl={requests.fatchComedyMovies}></Row>
   </Contaner> 
-      // </div>
   )
 }
 
