@@ -10,8 +10,6 @@ import Row from '../components/Row'
 const MainPage = () => {
   return (
     <Contaner>
-      {/* // <div className='main-wrap'> */}
-
     <Nav></Nav>
     <Banner></Banner>
     <Category></Category>
