@@ -19,7 +19,7 @@ const Nav = () => {
   return (
     <NavWrapper show={handleShow + ''}>
       <Logo>
-        <img alt='Disney Plus Logo' src='/images/nav-logo.jpg' onClick={()=>{window.location.href='/'}}/>
+        <img alt='Disney Plus Logo' src='/images/nav-logo.svg' onClick={()=>{window.location.href='/'}}/>
       </Logo>
     </NavWrapper>
   )
@@ -38,7 +38,8 @@ justify-content: space-between;
 align-items: center;
 padding: 0 36px;
 letter-spacing: 16px;
-z-index: 5;
+z-index: 99999;
+height: 72px;
 `;
 
 const Logo = styled.a`

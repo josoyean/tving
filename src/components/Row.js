@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import styled from 'styled-components';
 import axios from '../api/axios';
 import "../components/Row.css";
 import ModalIndex from './MovieModal/ModalIndex';
@@ -21,11 +22,12 @@ const Row = ({title,id,fetchUrl}) => {
   const hendleClick = (movie) =>{
     setModalOpen(true);
     setMovieSelected(movie);
-    console.log(movie)
+  
   }
   return (
     <div>
-      <h2>{title}</h2>
+      <Title>{title}</Title>
+  
       <div className='slider'>
         <div className='slider__arrow-left' onClick={()=>{
               document.getElementById(id).scrollLeft -= window.innerWidth + 80;
@@ -51,3 +53,7 @@ const Row = ({title,id,fetchUrl}) => {
 }
 
 export default Row
+
+const Title = styled.h2`
+color: #fff;
+`
