@@ -19,7 +19,7 @@ const Nav = () => {
   return (
     <NavWrapper show={handleShow + ''}>
       <Logo>
-        <img alt='Disney Plus Logo' src='/images/img_tving-symbol.svg' onClick={()=>{window.location.href='/'}}/>
+        <img alt='Disney Plus Logo' src='/images/nav-logo.jpg' onClick={()=>{window.location.href='/'}}/>
       </Logo>
     </NavWrapper>
   )
@@ -32,7 +32,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-background-color: ${props => props.show ? '#fff': 'transparent'};
+background-color: ${props => props.show ? '#000': 'transparent'};
 display: flex;
 justify-content: space-between;
 align-items: center;

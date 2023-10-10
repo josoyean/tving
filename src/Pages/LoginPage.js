@@ -20,10 +20,7 @@ const swiperImg = (swiperNum) =>{
   return imgNum 
 }
 
-const mainPageMove = (e) =>{
-  // console.log('안녕')
-  window.location.href = '/main'
-}
+
   return (
     <div className='login-wrap'>
     <section className='loginContaner' id='section-0'>
@@ -33,7 +30,7 @@ const mainPageMove = (e) =>{
                 <p className='message-2'>방송, 영화, 해외시리즈까지!</p>
                 <p className='message-3'>재미를 플레이해보세요.</p>
                 <p className='message-4'>간편하게 가입하고, 원하실 때 해지할 수 있어요.</p>
-           <button type='button' onClick={mainPageMove}> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button>
+           <button type='button'> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button>
             </div>
         </div>
     </section>
