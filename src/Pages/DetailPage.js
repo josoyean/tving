@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const DetailPage = () => {
   const movePage = useNavigate();
-  // movePage('/index');
-  console.log('movePage')
-  // window.location.href='/tving/index';
+  useEffect(()=>{
+    console.log('movePage')
+    movePage('/');
+    
+  },[])
+
   return (
     <div>DetailPages</div>
   )
