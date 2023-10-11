@@ -1,7 +1,7 @@
 import React from 'react';
 
 const DetailPage = () => {
-  window.location.href='/index';
+  window.location.href='/';
   return (
     <div>DetailPages</div>
   )
