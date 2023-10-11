@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/tving/static/css/main.c9fd5b54.css",
-    "main.js": "/tving/static/js/main.ec081bee.js",
+    "main.js": "/tving/static/js/main.b46d03e0.js",
     "static/js/787.0202b8b0.chunk.js": "/tving/static/js/787.0202b8b0.chunk.js",
     "static/media/tving-bg.webp": "/tving/static/media/tving-bg.e64f1d799951c595dd98.webp",
     "static/media/tving-gradatrion.png": "/tving/static/media/tving-gradatrion.d9671ba6b842279ec86b.png",
     "static/media/img_tving-symbol.svg": "/tving/static/media/img_tving-symbol.a71e3a46abea5062707c.svg",
     "index.html": "/tving/index.html",
     "main.c9fd5b54.css.map": "/tving/static/css/main.c9fd5b54.css.map",
-    "main.ec081bee.js.map": "/tving/static/js/main.ec081bee.js.map",
+    "main.b46d03e0.js.map": "/tving/static/js/main.b46d03e0.js.map",
     "787.0202b8b0.chunk.js.map": "/tving/static/js/787.0202b8b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9fd5b54.css",
-    "static/js/main.ec081bee.js"
+    "static/js/main.b46d03e0.js"
   ]
 }
