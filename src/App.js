@@ -23,10 +23,10 @@ function App() {
     <div className="App">
     <Routes>
       <Route path="/" element={<Layout></Layout>}>
-        <Route path="index" element={<LoginPage></LoginPage>}></Route>
-        <Route path="main" element={<MainPage></MainPage>}></Route>
+        <Route path="/index" element={<LoginPage></LoginPage>}></Route>
+        <Route path="/main" element={<MainPage></MainPage>}></Route>
         <Route path=":movieId" element={<DetailPage></DetailPage>}></Route>
-        <Route path="search" element={<SearchPage></SearchPage>}></Route>
+        <Route path="/search" element={<SearchPage></SearchPage>}></Route>
       </Route>
     </Routes>
     </div>

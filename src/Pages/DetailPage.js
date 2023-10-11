@@ -1,7 +1,11 @@
 import React from 'react';
+import useNavigate from 'react-router-dom';
 
 const DetailPage = () => {
-  window.location.href='/tving/index';
+  const movePage = useNavigate();
+  movePage('/index');
+  console.log('movePage',movePage)
+  // window.location.href='/tving/index';
   return (
     <div>DetailPages</div>
   )
