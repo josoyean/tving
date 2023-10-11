@@ -1,13 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
 // import styled from 'styled-components'
-import requests from '../api/request'
-import Banner from '../components/Banner'
-import Category from '../components/Category'
-import Nav from '../components/Nav'
-import Row from '../components/Row'
+import requests from '../api/request';
+import Banner from '../components/Banner';
+import Category from '../components/Category';
+import Nav from '../components/Nav';
+import Row from '../components/Row';
 
 const MainPage = () => {
+  const movePage = useNavigate();
+  useEffect(()=>{
+    console.log('movePage')
+    movePage('/');
+    
+  },[])
   return (
     <Contaner>
     <Nav></Nav>
