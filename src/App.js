@@ -21,11 +21,11 @@ function App() {
   return (
     <div className="App">
     <Routes>
-      <Route path="/" element={<Layout></Layout>}>
-        <Route path="/" element={<LoginPage></LoginPage>}></Route>
-        <Route path="main" element={<MainPage></MainPage>}></Route>
-        <Route path=":movieId" element={<DetailPage></DetailPage>}></Route>
-        <Route path="search" element={<SearchPage></SearchPage>}></Route>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<LoginPage />}></Route>
+        <Route path="main" element={<MainPage />}></Route>
+        <Route path=":movieId" element={<DetailPage />}></Route>
+        <Route path="search" element={<SearchPage />}></Route>
       </Route>
     </Routes>
     </div>
