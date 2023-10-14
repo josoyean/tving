@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const DetailPage = () => {
   const movePage = useNavigate();
   useEffect(()=>{
-    console.log('DetailPage')
+    console.log('/tving/login')
     movePage('/tving/login');
     
   },[])

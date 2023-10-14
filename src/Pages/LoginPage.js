@@ -30,7 +30,7 @@ const swiperImg = (swiperNum) =>{
                 <p className='message-2'>방송, 영화, 해외시리즈까지!</p>
                 <p className='message-3'>재미를 플레이해보세요.</p>
                 <p className='message-4'>간편하게 가입하고, 원하실 때 해지할 수 있어요.</p>
-                <Link to="/main">  <button type='button'> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button></Link>
+                <Link to="/main">  <button type='button' className='tving-button'> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button></Link>
             </div>
         </div>
     </section>
@@ -103,11 +103,37 @@ const swiperImg = (swiperNum) =>{
 <div className='section-3-video'>
 <Iframe 
       src={`https://image.tving.com/ntgs/operation/onboard/2023/04/03/1680488907_1.mp4?autoplay=1&mute=1&loop=1`}
-      width='100%' height='600' frameBorder='0' allow='autoplay'
+      width='100%' height='600' frameBorder='0'
       ></Iframe>
-
+<img src="https://image.tving.com/ntgs/operation/onboard/2023/06/01/1685582727_1.png" className="section-4-video css-f8xuja ea0b28c38 show" alt="똑똑하게 보는 재미 소개 영상"></img>
 </div>
         </div>
+    </section>
+
+    <section id='section--4'>
+    <div className='center'>
+    <div className='section-4-wrap'>
+    <Message1>함께 즐기는 재미</Message1>
+                <Message2>다양한 기기로 즐겨보세요!</Message2>
+                <Message3>스마트폰,태블릿,PC,TV,크롬캐스트에서 시청</Message3>          
+                <Message3>최대4명의 지인들과 함께 구독</Message3>          
+    </div>
+    <div className='section-4-video'>
+    <Iframe 
+      src={`https://image.tving.com/ntgs/operation/onboard/2023/04/03/1680488945_1.mp4?autoplay=1&mute=1&loop=1`}
+      width='100%' height='400' frameBorder='0' 
+      ></Iframe>
+    </div>
+      </div>
+    </section>
+    <section id='section--5'>
+    <div className='center'>
+      <div className='section-5-wrap'>
+<img src='/images/no-1-k-new-tving.svg' alt='section-5-img'></img>
+<Message1>지금 시작해보세요</Message1>
+<Link to="/main"><button type='button' className='tving-button'> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button></Link>
+      </div>
+      </div>
     </section>
     </div>
   )
