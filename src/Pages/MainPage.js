@@ -11,7 +11,7 @@ import Row from '../components/Row';
 const MainPage = () => {
   const movePage = useNavigate();
   useEffect(()=>{
-    // console.log('movePage')
+    console.log('movePage')
     // movePage('/');
     
   },[])

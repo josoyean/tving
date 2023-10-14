@@ -22,7 +22,7 @@ function App() {
     <div className="App">
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<LoginPage />}></Route>
+        <Route path="login" element={<LoginPage />}></Route>
         <Route path="main" element={<MainPage />}></Route>
         <Route path=":movieId" element={<DetailPage />}></Route>
         <Route path="search" element={<SearchPage />}></Route>

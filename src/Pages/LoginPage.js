@@ -91,8 +91,8 @@ const swiperImg = (swiperNum) =>{
     <section id='section--3'>
       <div className='video-wrap'>
       <Iframe 
-      src={`https://www.youtube.com/embed/5NST_3F_jxM`}
-      width='640' height='360' frameBorder='0' allow='autoplay; fullscreen' 
+      src={`https://www.youtube.com/embed/5NST_3F_jxM?autoplay=1&mute=1&loop=1`}
+      width='100%' height='700' frameBorder='0' allow='autoplay'
       ></Iframe>
       </div>
     </section>
