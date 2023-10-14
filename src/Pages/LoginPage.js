@@ -89,7 +89,12 @@ const swiperImg = (swiperNum) =>{
     </section>
 
     <section id='section--3'>
-      
+      <div className='video-wrap'>
+      <Iframe 
+      src={`https://www.youtube.com/embed/5NST_3F_jxM`}
+      width='640' height='360' frameBorder='0' allow='autoplay; fullscreen' 
+      ></Iframe>
+      </div>
     </section>
     </div>
   )
@@ -117,4 +122,20 @@ export default LoginPage
     font-weight: bold;
     font-size: 1.167rem;
     color: #a3a3a3;
+ `
+ const Iframe = styled.iframe`
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.65;
+ border: none;
+ 
+ &::after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
  `
