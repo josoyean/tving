@@ -5,7 +5,7 @@ const DetailPage = () => {
   const movePage = useNavigate();
   useEffect(()=>{
     console.log('DetailPage')
-    // movePage('/');
+    movePage('/login');
     
   },[])
 
