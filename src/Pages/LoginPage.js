@@ -95,6 +95,19 @@ const swiperImg = (swiperNum) =>{
       width='100%' height='700' frameBorder='0' allow='autoplay'
       ></Iframe>
       </div>
+
+      <div className='section-3-wrap'>
+      <Message1>똑똑하게 보는 재미</Message1>
+                <Message2>최신 방송을 가장 빠르고 간편하게 시청하세요!</Message2>
+                <Message3>실시간TV,퀵VOD,타임머신 기능으로 기다리지말고 편리하게 시청</Message3>    
+<div className='section-3-video'>
+<Iframe 
+      src={`https://image.tving.com/ntgs/operation/onboard/2023/04/03/1680488907_1.mp4?autoplay=1&mute=1&loop=1`}
+      width='100%' height='600' frameBorder='0' allow='autoplay'
+      ></Iframe>
+
+</div>
+        </div>
     </section>
     </div>
   )

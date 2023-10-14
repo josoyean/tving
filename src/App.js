@@ -23,7 +23,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<LoginPage />}></Route>
-        <Route path="login" element={<LoginPage />}></Route>
+        <Route path="tving/login" element={<LoginPage />}></Route>
         <Route path="main" element={<MainPage />}></Route>
         <Route path=":movieId" element={<DetailPage />}></Route>
         <Route path="search" element={<SearchPage />}></Route>
