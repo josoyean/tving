@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-const Nav = () => {
+const Nav = ({top}) => {
+  console.log('top',top)
   const [handleShow,setHandleShow] = useState(false);
   useEffect(()=>{
     window.addEventListener('scroll',function () {
@@ -16,13 +17,29 @@ const Nav = () => {
       })
     }
   },[])
-  return (
-    <NavWrapper show={handleShow + ''}>
+  if(top){
+    return (
+      <NavWrapper show={handleShow + ''}>
+        <div className='nav-left'>
       <Logo>
-        <img alt='Logo' src='../images/nav-logo.svg' onClick={()=>{window.location.href='/login'}}/>
+        <img alt='Logo' src={process.env.PUBLIC_URL+`/images/nav-logo.svg`} onClick={()=>{window.location.href='/login'}}/>
       </Logo>
+      
+        </div>
+        <div className='nav-right'></div>
+     
     </NavWrapper>
   )
+  }else{
+    return (
+      <NavWrapper show={handleShow + ''}>
+      <Logo>
+        <img alt='Logo' src={process.env.PUBLIC_URL+`/images/nav-logo.svg`} onClick={()=>{window.location.href='/login'}}/>
+      </Logo>
+     
+    </NavWrapper>
+  )
+}
 }
 
 export default Nav

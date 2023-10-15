@@ -80,7 +80,11 @@ a{
     width: 300px;
 
 }
-
+#section--5  button.tving-button{
+    height: 70px;
+    width: 450px;
+    font-size: 25px;
+}
  button.tving-button i {
     display: block;
     width: 56px;
@@ -90,7 +94,10 @@ a{
     background-size: 100%;
     background-position: center center;
 }
-
+#section--5  button.tving-button i{
+    width: 70px;
+    height: 70px;
+}
 .section-1-wrap .section-1-image {
     position: relative;
 }

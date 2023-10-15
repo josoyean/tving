@@ -20,7 +20,6 @@ const swiperImg = (swiperNum) =>{
   return imgNum 
 }
 
-
   return (
     <div className='login-wrap'>
     <section className='loginContaner' id='section-0'>
@@ -129,7 +128,7 @@ const swiperImg = (swiperNum) =>{
     <section id='section--5'>
     <div className='center'>
       <div className='section-5-wrap'>
-<img src='/images/no-1-k-new-tving.svg' alt='section-5-img'></img>
+<img src={process.env.PUBLIC_URL+`/images/no-1-k-new-tving.svg`} alt='section-5-img'></img>
 <Message1>지금 시작해보세요</Message1>
 <Link to="/main"><button type='button' className='tving-button'> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button></Link>
       </div>
