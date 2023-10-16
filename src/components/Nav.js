@@ -5,7 +5,8 @@ const Nav = ({top}) => {
   const [handleShow,setHandleShow] = useState(false);
   useEffect(()=>{
     window.addEventListener('scroll',function () {
-      if(window.screenY>50){
+  
+      if(window.scrollY>72){
         setHandleShow(true)
       }else{
         setHandleShow(false)
@@ -19,20 +20,24 @@ const Nav = ({top}) => {
   },[])
   if(top){
     return (
-      <NavWrapper show={handleShow + ''}>
+      <MainNavWrapper className={'mainNav'+handleShow}>
         <div className='nav-left'>
       <Logo>
         <img alt='Logo' src={process.env.PUBLIC_URL+`/images/nav-logo.svg`} onClick={()=>{window.location.href='/login'}}/>
       </Logo>
       
         </div>
-        <div className='nav-right'></div>
-     
-    </NavWrapper>
+        <div className='nav-right'>
+          <button className='icon search'></button>
+          <div className='profile-wrap'>
+            <img alt='profile' src={process.env.PUBLIC_URL+`/images/profile.jpg`}></img>
+          </div>
+        </div>
+    </MainNavWrapper>
   )
   }else{
     return (
-      <NavWrapper show={handleShow + ''}>
+      <NavWrapper className={'nav'+handleShow}>
       <Logo>
         <img alt='Logo' src={process.env.PUBLIC_URL+`/images/nav-logo.svg`} onClick={()=>{window.location.href='/login'}}/>
       </Logo>
@@ -49,7 +54,22 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-background-color: ${props => props.show ? '#000': 'transparent'};
+/* background-color: ${(props) => (props.show ? '#fff': '#000')}; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-sizing: border-box;
+padding: 0 36px;
+letter-spacing: 16px;
+z-index: 99999;
+height: 72px;
+`;
+const MainNavWrapper = styled.nav`
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+/* background-color: ${props => props.show ?  'transparent':'#000'}; */
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -58,7 +78,6 @@ letter-spacing: 16px;
 z-index: 99999;
 height: 72px;
 `;
-
 const Logo = styled.a`
 padding: 0;
 width: 88px;

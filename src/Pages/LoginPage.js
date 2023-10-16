@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
+import Nav from '../components/Nav';
 
 import "../Pages/LoginPage.css";
 const LoginPage = () => {
@@ -21,6 +22,8 @@ const swiperImg = (swiperNum) =>{
 }
 
   return (
+    <div>
+          <Nav top={false}></Nav>
     <div className='login-wrap'>
     <section className='loginContaner' id='section-0'>
         <div className='center'>
@@ -125,7 +128,7 @@ const swiperImg = (swiperNum) =>{
     </div>
       </div>
     </section>
-    <section id='section--5'>
+    <section id='section--5' style={{'padding': '0px 0px 300px 0px'}}>
     <div className='center'>
       <div className='section-5-wrap'>
 <img src={process.env.PUBLIC_URL+`/images/no-1-k-new-tving.svg`} alt='section-5-img'></img>
@@ -134,6 +137,7 @@ const swiperImg = (swiperNum) =>{
       </div>
       </div>
     </section>
+    </div>
     </div>
   )
 }

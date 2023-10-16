@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 // import styled from 'styled-components'
+import '../Pages/MainPage.css';
+import Banner from '../components/Banner';
 import Nav from '../components/Nav';
-
 const MainPage = () => {
   const movePage = useNavigate();
   alert('작업중입니다. :)')
@@ -15,7 +16,7 @@ const MainPage = () => {
   return (
     <Contaner>
     <Nav top={true}></Nav>
-    {/* <Banner></Banner> */}
+    <Banner></Banner>
     {/* <Category></Category> */}
     {/* <Row title='Trending Now' id='TN' fetchUrl={requests.fatchTrending}></Row>
     <Row title='Top Rated' id='TR' fetchUrl={requests.fatchTopRated}></Row>

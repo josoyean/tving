@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
     <Routes>
-      <Route path="/" element={<Layout />}>
+      {/* <Route path="/" element={<Layout />}> */}
         <Route path="/" element={<LoginPage />}></Route>
         <Route path="tving/login" element={<LoginPage />}></Route>
         <Route path="main" element={<MainPage />}>
@@ -29,7 +29,7 @@ function App() {
         </Route>
         <Route path=":movieId" element={<DetailPage />}></Route>
         <Route path="search" element={<SearchPage />}></Route>
-      </Route>
+      {/* </Route> */}
     </Routes>
     </div>
   );
