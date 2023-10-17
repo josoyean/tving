@@ -63,10 +63,13 @@ padding: 0 36px;
 letter-spacing: 16px;
 z-index: 99999;
 height: 72px;
+padding: 0 calc(3.5vw + 5px);
 `;
 const MainNavWrapper = styled.nav`
 position: fixed;
 top: 0;
+padding: 0 calc(3.5vw + 5px);
+box-sizing: border-box;
 left: 0;
 right: 0;
 /* background-color: ${props => props.show ?  'transparent':'#000'}; */

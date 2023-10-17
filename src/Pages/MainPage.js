@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 // import styled from 'styled-components'
@@ -7,12 +8,31 @@ import Banner from '../components/Banner';
 import Nav from '../components/Nav';
 const MainPage = () => {
   const movePage = useNavigate();
-  alert('작업중입니다. :)')
+  const [program,setProgram] = useState([])
   useEffect(()=>{
-    console.log('movePage')
-    // movePage('/');
-    
+    // console.log('movePage')
+    fetchData();
+    alert('작업중입니다. :)');
   },[])
+  
+  const fetchData = async() => {
+    const apiUrl = 'date.json';
+    const response = await axios.get(apiUrl);
+    setProgram(response.data.tvingList);
+      
+    }
+    useEffect(()=>{
+      // program.filter(number => {
+        // console.log(number.date)
+        let pensByColors = program.sort((a,b) => {
+        return  (b.date - a.date)
+      });
+      console.log('pensByColors',pensByColors);
+    
+    },[program])
+
+   
+
   return (
     <Contaner>
     <Nav top={true}></Nav>
@@ -24,8 +44,8 @@ const MainPage = () => {
     <Row title='Comedy Movies' id='CN' fetchUrl={requests.fatchComedyMovies}></Row> */}
   </Contaner> 
   )
-}
 
+}
 export default MainPage
 
 const Contaner = styled.main`
@@ -35,7 +55,6 @@ const Contaner = styled.main`
   overflow-x: hidden;
   display: block;
   top: 72px;
-  padding: 0 calc(3.5vw + 5px);
 
   &::after {
     background: url("/images/home-background.png") center center / cover
@@ -46,4 +65,4 @@ const Contaner = styled.main`
     opacity: 1;
     z-index: -1;
   }
-`;
+`

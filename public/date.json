@@ -1,0 +1,315 @@
+{
+    "tvingList" : [
+      {
+        "id" : 1,
+        "title" : "힘쎈여자 강남순",
+        "subtitle" : "어마무시한 괴력을 타고난 3대 모녀의 신종 범죄 소탕 프로젝트!",
+        "channel" : "JTBC",
+        "views" : "1015",
+        "date" : "20231007",
+        "genre" : "판타지",
+        "type" : "드라마",
+        "days" : [
+            {"day":"mon"},
+            {"day":"tue"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230918/P001746797.jpg/dims/resize/400"
+      },
+      {
+        "id" : 2,
+        "title" : "반짝이는 워터멜론",
+        "subtitle" : "음악 천재 CODA 소년의 타임슬립물 반짝반짝 빛나는 열여덟 청춘의 이야기!",
+        "channel" : "tvN",
+        "views" : "10105",
+        "date" : "20230925",
+        "genre" : "판타지",
+        "type" : "드라마",
+        "days" : [
+            {"day":"mon"},
+            {"day":"tue"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230831/P001743591.jpg/dims/resize/400"
+      },
+      {
+        "id" : 3,
+        "title" : "콩 심은 데 콩 나고 팥 심은 데 팥 난다",
+        "subtitle" : "이광수, 김우빈, 도경수, 김기방의 코믹 다큐 찐친들의 밭캉스",
+        "channel" : "tvN",
+        "views" : "10468",
+        "date" : "20231007",
+        "genre" : "",
+        "type" : "예능",
+        "days" : [
+            {"day":"fri"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230926/P001747179.jpg/dims/resize/400"
+      },
+      {
+        "id" : 4,
+        "title" : "[더빙] 짱구는 못말려 : 수수께끼! 꽃피는 천하떡잎학교",
+        "subtitle" : "짱구와 친구들, 명문학교에 입학하다?! 명문 엘리트 양성학교에 체험 입학하게 된 짱구와 친구들!",
+        "channel" : "",
+        "views" : "115",
+        "date" : "20221007",
+        "genre" : "코믹",
+        "type" : "애니메이션",
+        "days" : [
+            {"day":""}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/F_webp,400"
+      },
+      {
+        "id" : 5,
+        "title" : "[더빙] 명탐정 코난 : 순흑의 악몽 - 극장판 20기 [더빙]",
+        "subtitle" : "수수께끼 오드아이 여인을 둘러싼 역대 최강의 블랙 미스터리!",
+        "channel" : "JTBC",
+        "views" : "15747",
+        "date" : "20160111",
+        "genre" : "추리",
+        "type" : "애니메이션",
+        "days" : [
+            {"day":""}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20220725/M000368408.jpg/dims/resize/F_webp,400"
+      },
+      {
+        "id" : 6,
+        "title" : "놀라운 토요일",
+        "subtitle" : "전국 시장 속 핫한 음식을 걸고 노래 가사 받아쓰기 게임을 하는 세대 초월 음악 예능",
+        "channel" : "tvN",
+        "views" : "15487",
+        "date" : "20180407",
+        "genre" : "",
+        "type" : "예능",
+        "days" : [
+            {"day":"sat"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/400"
+      }
+      ,
+      {
+        "id" : 7,
+        "title" : "이 연애는 불가항력",
+        "subtitle" : "3백여 년 전 철저히 봉인되었던 금서를 얻게 된 말단 공무원 이홍조와 그 금서의 희생양이 된 변호사 장신유의 불가항력적 로맨스",
+        "channel" : "",
+        "views" : "22487",
+        "date" : "20230823",
+        "genre" : "로맨스",
+        "type" : "드라마",
+        "days" : [
+            {"day":"wed"},
+            {"day":"thu"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230725/P001740125.jpg/dims/resize/400"
+      }
+      ,
+      {
+        "id" : 8,
+        "title" : "김종욱 찾기",
+        "subtitle" : "안녕하십니까! 첫사랑을 찾아드리는 첫사랑 찾기 사무소입니다!",
+        "channel" : "",
+        "views" : "15487",
+        "date" : "20101208",
+        "genre" : "로맨스",
+        "type" : "영화",
+        "days" : [
+            {"day":""}
+        ],
+        "thumbnail" : "https://image.tving.com/upload/cms/caim/CAIM2100/M000260133.jpg/dims/resize/F_webp,400"
+      }
+      ,
+      {
+        "id" : 9,
+        "title" : "최강야구",
+        "subtitle" : "Win or Nothing. 오직 승리만을 추구하는 사상 최강의 야구팀이 탄생했다. 야구에 미친 자들의 모든 걸 건 진짜 승부.",
+        "channel" : "JTBC",
+        "views" : "13874",
+        "date" : "20220606",
+        "genre" : "",
+        "type" : "예능",
+        "days" : [
+            {"day":"mon"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/480"
+      }
+      ,
+      {
+        "id" : 10,
+        "title" : "일타스캔들",
+        "subtitle" : "사교육 전쟁터에서 펼쳐지는 국가대표 반찬가게 열혈 사장과 대한민국 수학 일타 강사의 달콤 쌉싸름한 로맨스",
+        "channel" : "tvN",
+        "views" : "1548",
+        "date" : "20230114",
+        "genre" : "드라마",
+        "type" : "드라마",
+        "days" : [
+            {"day":"sat"},
+            {"day":"sun"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230107/P001685600.jpg/dims/resize/400"
+      }
+      ,
+      {
+        "id" : 11,
+        "title" : "나쁜엄마",
+        "subtitle" : "자식을 위해 악착같이 나쁜 엄마가 될 수 밖에 없었던 ‘영순’과 아이가 되어버린 아들 ‘강호’가 잃어버린 행복을 찾아가는 감동의 힐링 코미디",
+        "channel" : "JTBC",
+        "views" : "12457",
+        "date" : "20230426",
+        "genre" : "가족",
+        "type" : "드라마",
+        "days" : [
+            {"day":"wed"},
+            {"day":"thu"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230421/P001712373.jpg/dims/resize/400"
+      },
+      {
+        "id" : 12,
+        "title" : "SKY 캐슬",
+        "subtitle" : "대한민국 상위 0.1%가 모여 사는 SKY 캐슬 안에서 남편은 왕으로, 제 자식은 천하제일 왕자와 공주로 키우고 싶은 명문가 출신 사모님들의 처절한 욕망을 샅샅이 들여다보는 리얼 코믹 풍자 드라마",
+        "channel" : "JTBC",
+        "views" : "12484",
+        "date" : "20181123",
+        "genre" : "범죄",
+        "type" : "드라마",
+        "days" : [
+            {"day":"sat"},
+            {"day":"fri"}
+        ],
+        "thumbnail" : "https://image.tving.com/upload/cms/caip/CAIP0900/P000722244.jpg/dims/resize/400"
+      },
+      {
+        "id" : 12,
+        "title" : "환승연애 시즌2",
+        "subtitle" : "다양한 이유로 이별한 커플들이 한 집에 모여 지나간 연애를 되짚고 새로운 인연을 마주하며 자신만의 사랑을 찾아가는 연애 리얼리티 프로그램",
+        "channel" : "tvN",
+        "views" : "15484",
+        "date" : "20220715",
+        "genre" : "리알리티",
+        "type" : "예능",
+        "days" : [
+            {"day":"fri"}
+        ],
+        "thumbnail" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001613931.jpg/dims/resize/400"
+      },
+      {
+        "id" : 13,
+        "title" : "어쩌다가 사장2",
+        "subtitle" : "",
+        "channel" : "tvN",
+        "views" : "4157441",
+        "date" : "20220217",
+        "genre" : "리알리티",
+        "type" : "예능",
+        "days" : [
+            {"day":"mon"}
+        ],
+        "thumbnail" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/400"
+      },
+      {
+        "id" : 14,
+        "title" : "백일의 낭군님",
+        "subtitle" : "완전무결 왕세자에서 졸지에 무쓸모남으로 전락한 원득과 조선 최고령 원녀 홍심의 전대미문 100일 로맨스",
+        "channel" : "tvN",
+        "views" : "15487",
+        "date" : "20180910",
+        "genre" : "사극",
+        "type" : "드라마",
+        "days" : [
+            {"day":"mon"},
+            {"day":"tue"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180907/P000657356.jpg/dims/resize/400"
+      },
+      {
+        "id" : 15,
+        "title" : "간택 - 여인들의 전쟁",
+        "subtitle" : "정통 왕조 이 씨가 아닌 자들에게 유일하게 허락된 조선 최고의 지위, '왕비'의 자리를 노리는 이들의 목숨 건 경합이 벌어지는 궁중 서바이벌 로맨스를 그린 이야기",
+        "channel" : "tv 조선",
+        "views" : "154871",
+        "date" : "20191214",
+        "genre" : "사극",
+        "type" : "드라마",
+        "days" : [
+            {"day":"sat"},
+            {"day":"sun"}
+        ],
+        "thumbnail" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001097347.jpg/dims/resize/400"
+      }
+      ,
+      {
+        "id" : 16,
+        "title" : "이번 생도 잘 부탁해",
+        "subtitle" : "'19회차 인생 로맨스의 최대 라이벌은 18회차의 나?' 전생을 기억하는 ‘반지음’이 꼭 만나야만 하는 '문서하'를 찾아가면서 펼쳐지는 저돌적 환생 로맨스",
+        "channel" : "tvN",
+        "views" : "121547",
+        "date" : "20230627",
+        "genre" : "판타지",
+        "type" : "드라마",
+        "days" : [
+            {"day":"sun"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230610/P001725512.jpg/dims/resize/400"
+      },
+      {
+        "id" : 17,
+        "title" : "슬기로운 의사생활",
+        "subtitle" : "누군가는 태어나고 누군가는 삶을 끝내는, 인생의 축소판이라 불리는 병원에서 평범한 듯 특별한 하루하루를 살아가는 사람들과 눈빛만 봐도 알 수 있는 20년지기 친구들의 케미스토리를 담은 드라마",
+        "channel" : "tvN",
+        "views" : "1548",
+        "date" : "20210617",
+        "genre" : "드라마",
+        "type" : "드라마",
+        "days" : [
+            {"day":"thu"}
+        ],
+        "thumbnail" : "https://image.tving.com/upload/cms/caip/CAIP0900/P001178341.png/dims/resize/400"
+      },
+      {
+        "id" : 18,
+        "title" : "더 배드 넌",
+        "subtitle" : "낸시는 남편과 헤어지고 시골로 이사한다. 엄마 패멀라와 대학생 딸 캐시가 이사를 도울 겸 얼마간 함께 지내기로 하는데,",
+        "channel" : "",
+        "views" : "1548",
+        "date" : "20190115",
+        "genre" : "공포",
+        "type" : "영화",
+        "days" : [
+            {"day":"mon"}
+        ],
+        "thumbnail" : "https://image.tving.com/upload/cms/caim/CAIM2100/M000364140.jpg/dims/resize/400"
+      },
+      {
+        "id" : 19,
+        "title" : "탐정: 더 비기닝",
+        "subtitle" : "국내 최대 미제살인사건 카페를 운영하는 파워블로거 ‘강대만’(권상우)은 아기 돌보랴, 만화방 운영하랴, 부인 눈치 보랴 일상에 치여,",
+        "channel" : "",
+        "views" : "15835",
+        "date" : "20150924",
+        "genre" : "코믹",
+        "type" : "영화",
+        "days" : [
+            {"day":""}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20190626/M000238033.jpg/dims/resize/400"
+      },
+      {
+        "id" : 20,
+        "title" : "유괴의 날",
+        "subtitle" : "ENA",
+        "channel" : "ENA",
+        "views" : "157763",
+        "date" : "20230913",
+        "genre" : "코믹",
+        "type" : "드라마",
+        "days" : [
+            {"day":"wed"},
+            {"day":"thu"}
+        ],
+        "thumbnail" : "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/400"
+      }
+     
+     
+    ]
+  }

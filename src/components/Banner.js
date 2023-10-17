@@ -58,12 +58,14 @@ return(
       <Swiper
       loop={true}
       modules={[Navigation, Pagination,Autoplay]}
-      autoplay={{ delay: 3000, speed: 5000 , disableOnInteraction:false}}
-      spaceBetween={10}
-      slidesPerView={7}
+      //autoplay={{ delay: 3000, speed: 5000 , disableOnInteraction:false}}
+      spaceBetween={0}
+      slidesPerView={1}
       slidesPerGroup={1}
         className="mySwiper"
       >
+     <SwiperSlide><img></img></SwiperSlide>
+     <SwiperSlide></SwiperSlide>
      <SwiperSlide></SwiperSlide>
       </Swiper>
     </div>

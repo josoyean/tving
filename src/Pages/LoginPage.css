@@ -18,7 +18,8 @@ button.icon{
     background-position: center center;
 }
 .center {
-    padding: 0 36px;
+    padding: 0 calc(3.5vw + 5px);
+    /* padding: 0 36px; */
     box-sizing: border-box;
 }
 .login-wrap{
