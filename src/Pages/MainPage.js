@@ -9,6 +9,7 @@ import Nav from '../components/Nav';
 const MainPage = () => {
   const movePage = useNavigate();
   const [program,setProgram] = useState([])
+  const [mainProgram,setMainProgram] = useState([])
   useEffect(()=>{
     // console.log('movePage')
     fetchData();
@@ -22,21 +23,16 @@ const MainPage = () => {
       
     }
     useEffect(()=>{
-      // program.filter(number => {
-        // console.log(number.date)
         let pensByColors = program.sort((a,b) => {
         return  (b.date - a.date)
       });
-      console.log('pensByColors',pensByColors);
     
     },[program])
-
-   
-
+    
   return (
     <Contaner>
     <Nav top={true}></Nav>
-    <Banner></Banner>
+    <Banner mainProgram={mainProgram}></Banner>
     {/* <Category></Category> */}
     {/* <Row title='Trending Now' id='TN' fetchUrl={requests.fatchTrending}></Row>
     <Row title='Top Rated' id='TR' fetchUrl={requests.fatchTopRated}></Row>
