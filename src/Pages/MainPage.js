@@ -1,11 +1,12 @@
-import React, { useCallback, useContext, useEffect,useState } from 'react';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 // import styled from 'styled-components'
 import '../Pages/MainPage.css';
 import Banner from '../components/Banner';
 import Nav from '../components/Nav';
+import Row from '../components/Row';
 const MainPage = () => {
   const movePage = useNavigate();
   const [program,setProgram] = useState([])
@@ -41,8 +42,8 @@ const MainPage = () => {
     <Nav top={true}></Nav>
     <Banner program={program !== '' ? program :" "}></Banner>
     {/* <Category></Category> */}
-    {/* <Row title='Trending Now' id='TN' fetchUrl={requests.fatchTrending}></Row>
-    <Row title='Top Rated' id='TR' fetchUrl={requests.fatchTopRated}></Row>
+ <Row title='티빙 TOP 20 프로그램' id='top' program={program}></Row>
+ {/*    <Row title='Top Rated' id='TR' fetchUrl={requests.fatchTopRated}></Row>
     <Row title='Action Movies' id='AM' fetchUrl={requests.fatchActionMovies}></Row>
   <Row title='Comedy Movies' id='CN' fetchUrl={requests.fatchComedyMovies}></Row> */}
   </div>

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -7,8 +7,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
-import axios from '../api/axios';
-import requests from '../api/request';
 import "./Banner.css";
 
 const Banner = ({program}) => {
@@ -31,7 +29,7 @@ const Banner = ({program}) => {
     },[program])
     
     const bannerSlier = ((mainProgram)=>{
-     console.log('mainProgram',mainProgram)
+    //  console.log('mainProgram',mainProgram)
      let bannerSlierImg = [];
      for(let index = 0 ;index<5;index++){
       bannerSlierImg.push( <SwiperSlide key={index}> <img src={mainProgram[index].background}  key={index} alt='' /> <span>{mainProgram[index].subtitle}</span></SwiperSlide>)
