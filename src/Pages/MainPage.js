@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react';
+import React, { useCallback, useContext, useEffect,useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
@@ -22,23 +22,31 @@ const MainPage = () => {
     setProgram(response.data.tvingList);
       
     }
-    useEffect(()=>{
-        let pensByColors = program.sort((a,b) => {
-        return  (b.date - a.date)
-      });
+
     
-    },[program])
+//  useEffect(()=>{
+//    let pensByColors = program.sort((a,b) => {
+//      return  (b.date - a.date)
+//     });
+//     setMainProgram(pensByColors)
     
+//   },[program,mainProgram])
+
+
+
   return (
-    <Contaner>
+    // <Contaner>
+    <div>
+
     <Nav top={true}></Nav>
-    <Banner mainProgram={mainProgram}></Banner>
+    <Banner program={program !== '' ? program :" "}></Banner>
     {/* <Category></Category> */}
     {/* <Row title='Trending Now' id='TN' fetchUrl={requests.fatchTrending}></Row>
     <Row title='Top Rated' id='TR' fetchUrl={requests.fatchTopRated}></Row>
     <Row title='Action Movies' id='AM' fetchUrl={requests.fatchActionMovies}></Row>
-    <Row title='Comedy Movies' id='CN' fetchUrl={requests.fatchComedyMovies}></Row> */}
-  </Contaner> 
+  <Row title='Comedy Movies' id='CN' fetchUrl={requests.fatchComedyMovies}></Row> */}
+  </div>
+  // </Contaner> 
   )
 
 }

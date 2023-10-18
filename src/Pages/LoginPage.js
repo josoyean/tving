@@ -9,8 +9,8 @@ import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
 import Nav from '../components/Nav';
-
 import "../Pages/LoginPage.css";
+
 const LoginPage = () => {
 const swiperImg = (swiperNum) =>{
   const imgNum = []

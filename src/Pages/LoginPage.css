@@ -44,6 +44,7 @@ button.icon{
   z-index: -1;
 }
 #section-0 {
+    background-size: cover;
     margin-top: 72px;
     z-index: 999;
     border-top: 1px solid rgb(49, 52, 62);
@@ -153,7 +154,7 @@ button.icon{
 
 .mySwiper {
     width: 100%;
-    height: 97px;
+    /* height: 97px; */
     box-sizing: border-box;
 }
 
@@ -240,7 +241,7 @@ margin-top: 100px;
     background-color: #000;
 }
 .navtrue{
-    background-color: transparent;
+    background-color: #000000d6;
 }
 .mainNavfalse{
     background-color: transparent;

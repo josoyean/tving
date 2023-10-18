@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 const Nav = ({top}) => {
-  console.log('top',top)
+ 
   const [handleShow,setHandleShow] = useState(false);
   useEffect(()=>{
     window.addEventListener('scroll',function () {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -11,23 +11,33 @@ import axios from '../api/axios';
 import requests from '../api/request';
 import "./Banner.css";
 
-const Banner = () => {
-  const [movie,setMovie] = useState([])
-  const [isClicked,setIsClicked] = useState(false)
-  useEffect(() => {
-  // fetchData();
-  }, [])
-  
-  const fetchData = async() => {
-  const response = await axios.get(requests.fatchNowPlaying);
-  const movieId =  response.data.results[Math.floor(Math.random() * response.data.results.length)].id
-  const { data: movieDetail } = await axios.get(`movie/${movieId}`, {
-    params: { append_to_response: "videos" }
-  })
-  
+const Banner = ({program}) => {
+  const [movie,setMovie] = useState([]);
+  const [mainProgram,setMainProgram] = useState([])
+  const [isClicked,setIsClicked] = useState(false);
 
-  setMovie(movieDetail)
-}
+
+  // const bannerSlier = useCallback(()=>{
+    // console.log('mainProgram',mainProgram)
+    
+    
+    // },[mainProgram]) 
+    useEffect(()=>{
+      let pensByColors = program.sort((a,b) => {
+        return  (b.date - a.date)
+      });
+      setMainProgram(pensByColors)
+      
+    },[program])
+    
+    const bannerSlier = ((mainProgram)=>{
+     console.log('mainProgram',mainProgram)
+     let bannerSlierImg = [];
+     for(let index = 0 ;index<5;index++){
+      bannerSlierImg.push( <SwiperSlide key={index}> <img src={mainProgram[index].background}  key={index} alt='' /> <span>{mainProgram[index].subtitle}</span></SwiperSlide>)
+     }
+return bannerSlierImg
+   })
 const truncase = (str,n)=>{
 
 return str?.length > n ? str.substring(0,n-1)+'...' :str
@@ -52,25 +62,35 @@ return(
 )
 }else{
   return (
-    <div>
+    // <div>
       <div className='banner__contents'>
       <div className='swiper'>
       <Swiper
       loop={true}
       modules={[Navigation, Pagination,Autoplay]}
-      //autoplay={{ delay: 3000, speed: 5000 , disableOnInteraction:false}}
+      autoplay={{ delay: 7000, speed: 5000 , disableOnInteraction:false}}
       spaceBetween={0}
       slidesPerView={1}
       slidesPerGroup={1}
+      pagination={{ clickable: true }}
+      navigation= {
+       {nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+       }}
         className="mySwiper"
       >
-     <SwiperSlide><img></img></SwiperSlide>
-     <SwiperSlide></SwiperSlide>
-     <SwiperSlide></SwiperSlide>
+        {
+mainProgram == '' ? null :  bannerSlier(mainProgram)
+        //  bannerSlier(mainProgram)
+        }
+
       </Swiper>
+      <div className="swiper-pagination"></div>
+      <div className="swiper-button-prev"></div>
+  <div className="swiper-button-next"></div>
     </div>
     </div>
-    </div>
+    // </div>
   //  <header className='banner' style={{
 //    backgroundPosition:'top center',
 //    backgroundSize:'cover',
