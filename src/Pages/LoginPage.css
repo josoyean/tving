@@ -162,8 +162,8 @@ button.icon{
     margin-top: 650px;
 }
 
-.swiper-slide {
-    width: 183px;
+#section--2 .swiper-slide {
+    min-width: 183px;
     border-radius: 2px;
 }
 

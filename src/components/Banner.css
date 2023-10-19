@@ -6,7 +6,9 @@
 .banner__contents{
   /* margin-top: 72px; */
   height: calc(100vw * (3 / 4));
-  max-height: 450px;
+  /* max-height: 450px; */
+  min-height: 450px;
+    max-height: 700px;
   width: 100vw;
   /* height: 400px; */
 }
@@ -35,6 +37,12 @@ width: 50%;
     /* line-height: 1.44; */
     text-align: left;
     color: rgb(255, 255, 255);
+    /* width: 200px; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .banner__contents .swiper-wrapper .swiper-slide{
   position: relative;

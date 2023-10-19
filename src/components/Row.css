@@ -1,5 +1,6 @@
 .slider{
 position: relative;
+height: calc(100% + 20px);
 }
 .slider .slider__arrow-left{
     padding: 20px 0;
@@ -12,7 +13,8 @@ position: relative;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: calc(100% + 20px);
+    height: 100%;
+    /* height: calc(100% + 20px); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,13 +76,13 @@ transition: 400ms all ease-in-out;
 }
 @media screen and (min-width:1200px){
     .row__poster{
-        max-height:161px;
+        /* max-height:161px; */
 
     }
 }
 @media screen and (max-width:768px){
     .row__poster{
-        max-height:280px;
+        /* max-height:280px; */
 
     }
 }

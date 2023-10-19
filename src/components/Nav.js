@@ -23,7 +23,7 @@ const Nav = ({top}) => {
       <MainNavWrapper className={'mainNav'+handleShow}>
         <div className='nav-left'>
       <Logo>
-        <img alt='Logo' src={process.env.PUBLIC_URL+`/images/nav-logo.svg`} onClick={()=>{window.location.href='/login'}}/>
+        <img alt='Logo' src={process.env.PUBLIC_URL+`/images/nav-logo.svg`} onClick={()=>{window.location.href='/tving/login'}}/>
       </Logo>
       
         </div>
@@ -39,7 +39,7 @@ const Nav = ({top}) => {
     return (
       <NavWrapper className={'nav'+handleShow}>
       <Logo>
-        <img alt='Logo' src={process.env.PUBLIC_URL+`/images/nav-logo.svg`} onClick={()=>{window.location.href='/login'}}/>
+        <img alt='Logo' src={process.env.PUBLIC_URL+`/images/nav-logo.svg`} onClick={()=>{window.location.href='/tving/login'}}/>
       </Logo>
      
     </NavWrapper>
