@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tving/static/css/main.2322f534.css",
+    "main.css": "/tving/static/css/main.ac222816.css",
     "main.js": "/tving/static/js/main.bfb96165.js",
     "static/js/787.0202b8b0.chunk.js": "/tving/static/js/787.0202b8b0.chunk.js",
     "static/media/tving-bg.webp": "/tving/static/media/tving-bg.e64f1d799951c595dd98.webp",
@@ -10,12 +10,12 @@
     "static/media/icon_slide_left.svg": "/tving/static/media/icon_slide_left.096a0ee315f0f0a987b2.svg",
     "static/media/icon_slide_right.svg": "/tving/static/media/icon_slide_right.d5343610b9ebe7e2f76f.svg",
     "static/media/icon_search.svg": "/tving/static/media/icon_search.acf428f62f3d34908390.svg",
-    "main.2322f534.css.map": "/tving/static/css/main.2322f534.css.map",
+    "main.ac222816.css.map": "/tving/static/css/main.ac222816.css.map",
     "main.bfb96165.js.map": "/tving/static/js/main.bfb96165.js.map",
     "787.0202b8b0.chunk.js.map": "/tving/static/js/787.0202b8b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2322f534.css",
+    "static/css/main.ac222816.css",
     "static/js/main.bfb96165.js"
   ]
 }
