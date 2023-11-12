@@ -14,9 +14,6 @@ const Row = ({title,id,program}) => {
      return  (b.views - a.views)
     });
     setTopProgram(programViews)
-
-    // console.log('program',program);
-    // setTopProgram(topProgram);
   },[program])
   
   useEffect(()=>{
@@ -25,7 +22,6 @@ const Row = ({title,id,program}) => {
 
   const hendleClick = (movie) =>{
     setModalOpen(true);
-    // setMovieSelected(movie);
   
   }
   return (
@@ -46,7 +42,7 @@ const Row = ({title,id,program}) => {
           // <div>
            
             // {
-              numProgram+1 <=10 && <div> <TopProgramNum>{numProgram+1}</TopProgramNum> <img className='row__poster' key={topProgram.id} src={topProgram.thumbnail} alt={topProgram.title}></img> </div>
+              numProgram+1 <=10 && <div key={topProgram.id}> <TopProgramNum>{numProgram+1}</TopProgramNum> <img className='row__poster' key={topProgram.id} src={topProgram.thumbnail} alt={topProgram.title}></img> </div>
             // }
           // </div>
         //   <img key={topProgram.id} onClick={()=>{

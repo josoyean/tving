@@ -1,0 +1,21 @@
+.login-wrap input{
+    border: 0px;
+    outline: none;
+    width: calc(100% - 30px);
+    background-color: #212121;
+    height: 100%;
+    box-sizing: border-box;
+    color: #fff; 
+    /* padding: 0 20px; */
+    font-size: inherit;
+}
+.login-wrap input::placeholder{
+color: #ababab;
+}
+.login-wrap button{
+    width: 30px;
+    border: 0px;
+    outline: none;
+    height: 30px;
+    background-color: transparent;
+}

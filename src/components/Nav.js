@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 const Nav = ({top}) => {
  
   const [handleShow,setHandleShow] = useState(false);
+  const movePage = useNavigate();
   useEffect(()=>{
     window.addEventListener('scroll',function () {
   
@@ -18,6 +20,10 @@ const Nav = ({top}) => {
       })
     }
   },[])
+
+  const profileClick = ()=>{
+    movePage('/tving/login');
+  }
   if(top){
     return (
       <MainNavWrapper className={'mainNav'+handleShow}>
@@ -29,7 +35,7 @@ const Nav = ({top}) => {
         </div>
         <div className='nav-right'>
           <button className='icon search'></button>
-          <div className='profile-wrap'>
+          <div className='profile-wrap' onClick={profileClick}>
             <img alt='profile' src={process.env.PUBLIC_URL+`/images/profile.jpg`}></img>
           </div>
         </div>

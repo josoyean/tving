@@ -13,13 +13,7 @@ const Banner = ({program}) => {
   const [movie,setMovie] = useState([]);
   const [mainProgram,setMainProgram] = useState([])
   const [isClicked,setIsClicked] = useState(false);
-
-
-  // const bannerSlier = useCallback(()=>{
-    // console.log('mainProgram',mainProgram)
-    
-    
-    // },[mainProgram]) 
+  
     useEffect(()=>{
       let pensByColors = program.sort((a,b) => {
         return  (b.date - a.date)
@@ -29,7 +23,6 @@ const Banner = ({program}) => {
     },[program])
     
     const bannerSlier = ((mainProgram)=>{
-    //  console.log('mainProgram',mainProgram)
      let bannerSlierImg = [];
      for(let index = 0 ;index<5;index++){
       bannerSlierImg.push( <SwiperSlide key={index}> <img src={mainProgram[index].background}  key={index} alt='' /> <span>{mainProgram[index].subtitle}</span></SwiperSlide>)
