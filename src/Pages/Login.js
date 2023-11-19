@@ -1,19 +1,30 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import '../Pages/Login.css';
+import Nav from '../components/Nav';
 function Login() {
     const [idValue,setId] = useState('');
     const [passwordValue,setPassword] = useState('');
     const [eyesIcon,setEyesIcon] = useState(true);
-    alert('작업중입니다. :)');
     useEffect(()=>{
         let idText = document.querySelector(".id-text");
         idText.focus();
+        Preparing();
         
     },[]);
+    const movePage = useNavigate();
+    const MainPageMove = ()=>{
+        movePage('/tving/main'); 
+      }
+
+    const Preparing = () =>{
+        alert('작업중입니다. :) 로그인 버튼 클릭 부탁드립니다.');
+        
+    }
     const idChange=(e)=>{
         setId(e.target.value);
-        // console.log(id.value.length);
+    
         let idText = document.querySelector(".id-text");
         let idIcon = document.querySelector(".id-icon");
         if(idText.value.length === 0){
@@ -60,7 +71,13 @@ setPassword("");
             passwordIcon.classList.remove("on");
         }
     }
+
+    const ChangeCheck = (e) =>{
+
+    }
   return (
+    <div>
+    <Nav top={false}></Nav>
     <LoginWrap>
         <LoginTitle>TVING ID 로그인</LoginTitle>
     <div className='login-wrap'>
@@ -79,7 +96,24 @@ setPassword("");
 </div>
         </IdPwWrap>
     </div>
+    {/* 자동 로그인 체크박스 */}
+    <div className='auto-login'>
+        <input type='checkbox' id='checkbox-login' onClick={ e => ChangeCheck(e)}></input>
+        <label htmlFor='checkbox-login'>자동 로그인</label>
+    </div>
+    <button className='doLoginBtn' onClick={MainPageMove}>로그인하기</button>
+
+    <div className='find-box'>
+        <FindText onClick={Preparing}>아이디 찾기</FindText>
+        <FindText onClick={Preparing}>비밀번호 찾기</FindText>
+    </div>
+    <div className='singup-box'>
+        아직 계정이 없으신가요?
+        <a href='' onClick={Preparing}>회원가입 하기</a>
+        
+    </div>
     </LoginWrap>
+    </div>
   )
 }
 
@@ -89,13 +123,24 @@ const LoginWrap = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 40px;
+    row-gap: 20px;
     height: 100vh;
     overflow: hidden;
     justify-content: center;
 `
 
-
+const FindText = styled.a`
+    color: #a3a3a3;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    border-right: 1px solid #2e2e2e;
+    box-sizing: border-box;
+   padding: 0 35px;
+   &:last-child{
+    border-right: none;
+   }
+`
 const LoginTitle = styled.span`
 color: #fff;
 font-size: 30px;

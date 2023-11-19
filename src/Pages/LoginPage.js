@@ -16,10 +16,8 @@ const LoginPage = () => {
 
   const movePage = useNavigate();
   const MainPageMove = ()=>{
-    // useEffect(()=>
-    console.log('/tving/main')  
-    movePage('/tving/main'); 
-  // },[]);
+  
+    movePage('/tving/login'); 
   }
 
   

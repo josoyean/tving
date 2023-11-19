@@ -1,48 +1,121 @@
-.login-wrap{
+.login-wrap {}
 
-}
-.login-wrap input{
+.login-wrap input {
     border: 0px;
     outline: none;
     width: calc(100% - 30px);
     background-color: #212121;
     height: 100%;
     box-sizing: border-box;
-    color: #fff; 
+    color: #fff;
     /* padding: 0 20px; */
     font-size: inherit;
     /* display: block; */
 }
-.login-wrap input::placeholder{
-color: #ababab;
+
+.login-wrap input::placeholder {
+    color: #ababab;
 }
-.login-wrap button{
+
+.login-wrap button {
     width: 30px;
     border: 0px;
     outline: none;
     height: 30px;
     background-color: transparent;
 }
+
 .button-wrap {
     display: flex;
     align-items: center;
 }
-.close-icon{
+
+.close-icon {
     background-image: url(/public/images/close-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
-.button-wrap .eyes-icon{
+
+.button-wrap .eyes-icon {
     background-image: url(/public/images/eyes-icon.svg);
     background-position: center;
     background-repeat: no-repeat;
     margin-left: 5px;
 }
-.button-wrap .eyes-icon.on{
+
+.button-wrap .eyes-icon.on {
     background-image: url(/public/images/eyes-icon-on.svg);
+}
+
+.password-icon,
+.id-icon {
+    display: none;
+}
+
+.auto-login {
+    display: flex;
+    width: 505px;
+}
+
+.auto-login label {
+    color: #6e6e6e;
+    font-size: 15px;
+    user-select: none;
+    font-weight: bold;
+    padding-left: 30px;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+
+.auto-login label::before {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 0;
+    top: 0;
+    background-color: #ababab;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: url(/public/images/check-off.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.auto-login input[type="checkbox"]:checked+label {
+    color: #fff;
+}
+
+.auto-login input[type="checkbox"]:checked+label::before {
+    background-image: url(/public/images/check-on.svg);
+    background-color: #ff1744;
 
 }
-.password-icon,
-.id-icon{
-    display: none;
+
+button.doLoginBtn {
+    margin-top: 10px;
+    border: #ff153c;
+    background-color: #ff153c;
+    width: 505px;
+    height: 60px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 800;
+}
+.singup-box{
+    color: #6e6e6e;
+    text-align: center;
+    margin-top: 25px;
+}
+.singup-box a{
+    color: #a3a3a3;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 30px;
 }

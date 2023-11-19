@@ -12,7 +12,7 @@ const MainPage = () => {
   const [program,setProgram] = useState([])
   const [mainProgram,setMainProgram] = useState([])
   useEffect(()=>{
-    // console.log('movePage')
+   
     fetchData();
     alert('작업중입니다. :)');
   },[])
