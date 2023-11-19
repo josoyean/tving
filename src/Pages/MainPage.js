@@ -21,7 +21,7 @@ const MainPage = () => {
     const apiUrl = 'date.json';
     const response = await axios.get(apiUrl);
     setProgram(response.data.tvingList);
-      
+      console.log(response)
     }
 
     

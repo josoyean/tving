@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -8,10 +8,21 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
-import Nav from '../components/Nav';
 import "../Pages/LoginPage.css";
+import Nav from '../components/Nav';
+
 
 const LoginPage = () => {
+
+  const movePage = useNavigate();
+  const MainPageMove = ()=>{
+    // useEffect(()=>
+    console.log('/tving/main')  
+    movePage('/tving/main'); 
+  // },[]);
+  }
+
+  
 const swiperImg = (swiperNum) =>{
   const imgNum = []
   for (let index = 0; index < 11; index++) {
@@ -32,7 +43,7 @@ const swiperImg = (swiperNum) =>{
                 <p className='message-2'>방송, 영화, 해외시리즈까지!</p>
                 <p className='message-3'>재미를 플레이해보세요.</p>
                 <p className='message-4'>간편하게 가입하고, 원하실 때 해지할 수 있어요.</p>
-                <Link to="/main">  <button type='button' className='tving-button'> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button></Link>
+                <button type='button' className='tving-button' onClick={MainPageMove}> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button>
             </div>
         </div>
     </section>
@@ -133,7 +144,7 @@ const swiperImg = (swiperNum) =>{
       <div className='section-5-wrap'>
 <img src={process.env.PUBLIC_URL+`/images/no-1-k-new-tving.svg`} alt='section-5-img'></img>
 <Message1>지금 시작해보세요</Message1>
-<Link to="/main"><button type='button' className='tving-button'> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button></Link>
+<button type='button' className='tving-button' onClick={MainPageMove}> <i className='play-icon'></i>지금 바로, 티빙을 플레이 하세요!</button>
       </div>
       </div>
     </section>

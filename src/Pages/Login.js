@@ -5,7 +5,7 @@ function Login() {
     const [idValue,setId] = useState('');
     const [passwordValue,setPassword] = useState('');
     const [eyesIcon,setEyesIcon] = useState(true);
-
+    alert('작업중입니다. :)');
     useEffect(()=>{
         let idText = document.querySelector(".id-text");
         idText.focus();
