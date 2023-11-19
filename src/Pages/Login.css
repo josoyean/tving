@@ -1,3 +1,6 @@
+.login-wrap{
+
+}
 .login-wrap input{
     border: 0px;
     outline: none;
@@ -8,6 +11,7 @@
     color: #fff; 
     /* padding: 0 20px; */
     font-size: inherit;
+    /* display: block; */
 }
 .login-wrap input::placeholder{
 color: #ababab;
@@ -18,4 +22,27 @@ color: #ababab;
     outline: none;
     height: 30px;
     background-color: transparent;
+}
+.button-wrap {
+    display: flex;
+    align-items: center;
+}
+.close-icon{
+    background-image: url(/public/images/close-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.button-wrap .eyes-icon{
+    background-image: url(/public/images/eyes-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+.button-wrap .eyes-icon.on{
+    background-image: url(/public/images/eyes-icon-on.svg);
+
+}
+.password-icon,
+.id-icon{
+    display: none;
 }
