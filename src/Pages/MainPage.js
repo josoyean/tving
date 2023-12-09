@@ -6,11 +6,12 @@ import styled from 'styled-components';
 import '../Pages/MainPage.css';
 import Banner from '../components/Banner';
 import Nav from '../components/Nav';
-import Row from '../components/Row';
+import Row from "../components/Row";
 const MainPage = () => {
   const movePage = useNavigate();
-  const [program,setProgram] = useState([])
-  const [mainProgram,setMainProgram] = useState([])
+  const [program,setProgram] = useState([]);
+  const [mainProgram,setMainProgram] = useState([]);
+  const [onlyTving,setOnlyTving]=useState([]);
   useEffect(()=>{
    
     fetchData();
@@ -21,17 +22,11 @@ const MainPage = () => {
     const apiUrl = 'date.json';
     const response = await axios.get(apiUrl);
     setProgram(response.data.tvingList);
-      console.log(response)
+    setOnlyTving(response.data.onlyTving);
+    console.log(onlyTving)
     }
 
-    
-//  useEffect(()=>{
-//    let pensByColors = program.sort((a,b) => {
-//      return  (b.date - a.date)
-//     });
-//     setMainProgram(pensByColors)
-    
-//   },[program,mainProgram])
+
 
 
 
@@ -43,8 +38,8 @@ const MainPage = () => {
     <Banner program={program !== '' ? program :" "}></Banner>
     {/* <Category></Category> */}
  <Row title='티빙 TOP 20 프로그램' id='top' program={program}></Row>
- {/*    <Row title='Top Rated' id='TR' fetchUrl={requests.fatchTopRated}></Row>
-    <Row title='Action Movies' id='AM' fetchUrl={requests.fatchActionMovies}></Row>
+   <Row title='오직! TVING에서만!!' id='only' program={onlyTving}></Row>
+    {/*  <Row title='Action Movies' id='AM' fetchUrl={requests.fatchActionMovies}></Row>
   <Row title='Comedy Movies' id='CN' fetchUrl={requests.fatchComedyMovies}></Row> */}
   </div>
   // </Contaner> 
