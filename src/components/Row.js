@@ -13,7 +13,7 @@ const Row = ({title,id,program}) => {
        let programViews = program.sort((a,b) => {
      return  (b.views - a.views)
     });
-    setTopProgram(programViews)
+    setTopProgram(programViews);
   },[program])
   
   useEffect(()=>{
@@ -27,7 +27,6 @@ const Row = ({title,id,program}) => {
   return (
     <div>
       <Title>{title}</Title>
-  
       <div className='slider'>
         <div className='slider__arrow-left' onClick={()=>{
               document.getElementById(id).scrollLeft -= window.innerWidth + 80;
@@ -35,19 +34,13 @@ const Row = ({title,id,program}) => {
           <span className='arrow'>{'<'}</span>
         </div>
         <div id={id} className='row__posters'>
-          
          {
-       
          program.map((topProgram,numProgram) => (
-          // <div>
-           
-            // {
-              numProgram+1 <=10 && <div key={topProgram.id}> <TopProgramNum>{numProgram+1}</TopProgramNum> <img className='row__poster' key={topProgram.id} src={topProgram.thumbnail} alt={topProgram.title}></img> </div>
-            // }
-          // </div>
-        //   <img key={topProgram.id} onClick={()=>{
-           
-        //   }} className='row__poster' src={topProgram.thumbnail} alt={topProgram.title}></img>
+              numProgram+1 <=10 && <div key={topProgram.id}> <TopProgramNum>{numProgram+1}</TopProgramNum> <img className='row__poster' key={topProgram.id} src={topProgram.thumbnail} alt={topProgram.title}></img>
+                 {
+                   topProgram.new === true && <span className='newLable'>NEW</span>
+                 }
+              </div>
            ))
            }
         </div>

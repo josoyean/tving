@@ -11,9 +11,9 @@ const MainPage = () => {
   const movePage = useNavigate();
   const [program,setProgram] = useState([]);
   const [mainProgram,setMainProgram] = useState([]);
-  const [onlyTving,setOnlyTving]=useState([]);
+  const [onlyTvingProgram,setOnlyTvingProgram]=useState([]);
+  const [movie,setMovie]=useState([]);
   useEffect(()=>{
-   
     fetchData();
     alert('작업중입니다. :)');
   },[])
@@ -22,27 +22,37 @@ const MainPage = () => {
     const apiUrl = 'date.json';
     const response = await axios.get(apiUrl);
     setProgram(response.data.tvingList);
-    setOnlyTving(response.data.onlyTving);
-    console.log(onlyTving)
+}
+
+useEffect(()=>{
+  let onlyArray=[];
+  let movieArray=[];
+  for (let index = 0; index < program.length; index++) {
+    const element = program[index];
+    if(element.only === true){
+      onlyArray.push(element);
     }
 
+    if(element.type === "예능"){
+      movieArray.push(element);
+    }
 
+  }
+  setMovie(movieArray);
+  setOnlyTvingProgram(onlyArray);
+},[program]);
 
 
 
   return (
-    // <Contaner>
     <div>
-
     <Nav top={true}></Nav>
     <Banner program={program !== '' ? program :" "}></Banner>
-    {/* <Category></Category> */}
- <Row title='티빙 TOP 20 프로그램' id='top' program={program}></Row>
-   <Row title='오직! TVING에서만!!' id='only' program={onlyTving}></Row>
-    {/*  <Row title='Action Movies' id='AM' fetchUrl={requests.fatchActionMovies}></Row>
-  <Row title='Comedy Movies' id='CN' fetchUrl={requests.fatchComedyMovies}></Row> */}
+    <Row title='티빙 TOP 20 프로그램' id='top' program={program}></Row>
+    <Row title='오직! TVING에서만!!' id='only' program={onlyTvingProgram}></Row>
+    <Row title='인기 예능' id='movie' program={movie}></Row>
+  
   </div>
-  // </Contaner> 
   )
 
 }

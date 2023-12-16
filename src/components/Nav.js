@@ -32,7 +32,7 @@ const Nav = ({top}) => {
       
         </div>
         <div className='nav-right'>
-          <button className='icon search'></button>
+          {/* <button className='icon search'></button> */}
           <div className='profile-wrap' >
             <img alt='profile' src={process.env.PUBLIC_URL+`/images/profile.jpg`}></img>
           </div>

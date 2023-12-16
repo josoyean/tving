@@ -11,12 +11,9 @@ import { Swiper, SwiperSlide } from "swiper/react"; // basic
 import "../Pages/LoginPage.css";
 import Nav from '../components/Nav';
 
-
 const LoginPage = () => {
-
   const movePage = useNavigate();
   const MainPageMove = ()=>{
-  
     movePage('/tving/login'); 
   }
 
