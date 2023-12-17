@@ -14,6 +14,7 @@ function Login() {
         
     },[]);
     const movePage = useNavigate();
+    
     const MainPageMove = ()=>{
         movePage('/tving/main'); 
       }

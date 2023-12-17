@@ -4,10 +4,10 @@ import Nav from '../components/Nav';
 import './JoinPage.css';
 import './Login.css';
 function JoinPage() {
-    const [idValue,setId] = useState('');
-    const [emailValue,setEmail] = useState('');
-    const [passwordValue,setPassword] = useState('');
-    const [passwordValue02,setPassword02] = useState('');
+    const [id,setId] = useState('');
+    const [email,setEmail] = useState('');
+    const [password ,setPassword] = useState('');
+    const [confirmPassword,setConfirmPassword] = useState('');
     const [eyesIcon,setEyesIcon] = useState(true);
     
     const textChange=(e)=>{
@@ -20,11 +20,11 @@ function JoinPage() {
             setEmail(e.target.value);
         }else if(e.target.parentElement.classList.contains("id-wrap")){
             setId(e.target.value);
-        }else if(e.target.parentElement.classList.contains("password01")){
+        }else if(e.target.parentElement.classList.contains("password")){
             var closeIcon01 = e.target.parentElement.getElementsByTagName("button")[1];
             setPassword(e.target.value);
-        }else if(e.target.parentElement.classList.contains("password02")){
-            setPassword02(e.target.value);
+        }else if(e.target.parentElement.classList.contains("confirmPassword")){
+            setConfirmPassword(e.target.value);
             var closeIcon01 = e.target.parentElement.getElementsByTagName("button")[1];
         }  
         
@@ -47,16 +47,24 @@ function JoinPage() {
        
        document.querySelector(".doJoinBtn").classList.remove("active");
         if(document.querySelectorAll(".text")[0].value.length === 0){
+            alert("ID를 입력해주세요.");
+            document.querySelectorAll(".text")[0].focus();
             return
         }
         
         if(document.querySelectorAll(".text")[1].value.length === 0){
+            alert("비밀번호를 입력해주세요.");
+            document.querySelectorAll(".text")[1].focus();
             return
         }
         if(document.querySelectorAll(".text")[2].value.length === 0){
+            alert("비밀번호를 입력해주세요.");
+            document.querySelectorAll(".text")[2].focus();
             return
         }
         if(document.querySelectorAll(".text")[3].value.length === 0){
+            alert("이메일을 입력해주세요.");
+            document.querySelectorAll(".text")[3].focus();
             return
         }
         
@@ -67,10 +75,10 @@ function JoinPage() {
         document.querySelector(".doJoinBtn").classList.remove("active");
         let idIcon = e.target.parentElement.querySelector(".close-icon");
         if(e.target.parentElement.classList.contains("button-wrap")){
-            if(e.target.parentElement.parentElement.classList.contains("password01")){
+            if(e.target.parentElement.parentElement.classList.contains("password")){
                 setPassword("");
             }else{
-                setPassword02("");
+                setConfirmPassword("");
             }
  let eyesIcon = e.target.parentElement.parentElement.querySelector(".eyes-icon");
  eyesIcon.style.display="none";
@@ -101,9 +109,30 @@ idIcon.style.display="none";
     }
 
     const MainPageMove = (e) => {
-        
+        e.preventDefault();
         if(e.target.classList.contains("active") === false) return
         
+        if(confirmPassword !== password ){
+            return  alert("비밀번호가 일치하지 않습니다. 확인해주세요.");
+            
+        }
+
+        let body = {
+            email: email,
+            id: id,
+            password: password,
+            confirmPassword: confirmPassword,
+        }
+
+        dispatch(registerUser(body)).then((res) => {
+            if (res.payload.success) {
+              navigate("/login");
+            } else {
+              alert("회원가입에 실패하셨습니다.");
+            }
+          });
+
+
       
     }
   return (
@@ -115,20 +144,20 @@ idIcon.style.display="none";
    <LoginSubTitle>아이디와 이메일로 간편하게 티빙을 시작하세요!</LoginSubTitle>
     <div className='login-wrap'>
    <IdPwWrap className='id-wrap'>
-   <input type='text' className='text'  onChange={textChange} placeholder='아이디' value={idValue} ></input>
+   <input type='text' className='text'  onChange={textChange} placeholder='아이디' value={id} ></input>
    <button className='close-icon id-icon' onClick={closeBtn}></button>
    </IdPwWrap>
    <Infor>영문 소문자 또는 영문 소문자, 숫자 조합 6~12 자리</Infor>
-   <IdPwWrap style={{"marginTop":"20px"}} className='password01'>
-<input type='password' value={passwordValue} className='text' onChange={textChange} placeholder='비밀번호'></input>
+   <IdPwWrap style={{"marginTop":"20px"}} className='password'>
+<input type='password' value={password } className='text' onChange={textChange} placeholder='비밀번호'></input>
 <div className='button-wrap password-icon'>
 <button className='close-icon ' onClick={closeBtn}></button>
 <button className='eyes-icon' onClick={eyesBtn}></button>
 </div>
     </IdPwWrap>
-    <IdPwWrap style={{"marginTop":"10px"}} className='password02'>
+    <IdPwWrap style={{"marginTop":"10px"}} className='confirmPassword'>
 
-<input type='password' value={passwordValue02} className='text' onChange={textChange} placeholder='비밀번호 확인'></input>
+<input type='password' value={confirmPassword} className='text' onChange={textChange} placeholder='비밀번호 확인'></input>
 <div className='button-wrap password-icon'>
 <button className='close-icon ' onClick={closeBtn}></button>
 <button className='eyes-icon' onClick={eyesBtn}></button>
@@ -136,7 +165,7 @@ idIcon.style.display="none";
     </IdPwWrap>
     <Infor>영문, 숫자, 특수문자(~!@#$%^&*) 조합 8~15 자리</Infor>
     <IdPwWrap className='email-wrap'>
-   <input type='text' className='text'  onChange={textChange} placeholder='이메일' value={emailValue} ></input>
+   <input type='text' className='text'  onChange={textChange} placeholder='이메일' value={email} ></input>
    <button className='close-icon' onClick={closeBtn}></button>
    </IdPwWrap>
     </div>
@@ -185,3 +214,4 @@ const IdPwWrap = styled.div`
     padding: 0 20px;
     align-items: center;
 `
+
