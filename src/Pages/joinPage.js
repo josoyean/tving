@@ -28,8 +28,7 @@ function JoinPage() {
             var closeIcon01 = e.target.parentElement.getElementsByTagName("button")[1];
         }  
         
-       textValue();
-
+        textValue();
         if(text.value.length === 0){
             closeIcon.style.display="none";
             
@@ -37,24 +36,35 @@ function JoinPage() {
             closeIcon01.style.display="none";
             return;
         }
+     
         closeIcon.style.display="block";
         if(closeIcon01 === undefined) return;
       closeIcon01.style.display="block";
     
     }
   
-    const textValue = () =>{
-        let textWrap =document.querySelectorAll(".text");
-        for(let i=0;i<textWrap.length;i++){
-            if(textWrap[i].value.length === 0){
-                continue
-            }
-            console.log("안녕",textWrap[i].value.length === 0);
-
+    const textValue = (e) =>{
+       
+       document.querySelector(".doJoinBtn").classList.remove("active");
+        if(document.querySelectorAll(".text")[0].value.length === 0){
+            return
         }
+        
+        if(document.querySelectorAll(".text")[1].value.length === 0){
+            return
+        }
+        if(document.querySelectorAll(".text")[2].value.length === 0){
+            return
+        }
+        if(document.querySelectorAll(".text")[3].value.length === 0){
+            return
+        }
+        
+       document.querySelector(".doJoinBtn").classList.add("active");
     }
 
     const closeBtn= (e)=>{
+        document.querySelector(".doJoinBtn").classList.remove("active");
         let idIcon = e.target.parentElement.querySelector(".close-icon");
         if(e.target.parentElement.classList.contains("button-wrap")){
             if(e.target.parentElement.parentElement.classList.contains("password01")){
@@ -70,11 +80,10 @@ idIcon.style.display="none";
  idIcon.style.display="none";
 //아이디 close버튼 클릭
 }else{
-    setEmail("");
     idIcon.style.display="none";
+    setEmail("");
 }
 
-//textValue();
     };
 
     const eyesBtn = (e) =>{
@@ -91,8 +100,11 @@ idIcon.style.display="none";
         }
     }
 
-    const MainPageMove = () => {
-
+    const MainPageMove = (e) => {
+        
+        if(e.target.classList.contains("active") === false) return
+        
+      
     }
   return (
     <div>
