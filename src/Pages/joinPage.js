@@ -124,13 +124,13 @@ idIcon.style.display="none";
             confirmPassword: confirmPassword,
         }
 
-        dispatch(registerUser(body)).then((res) => {
-            if (res.payload.success) {
-              navigate("/login");
-            } else {
-              alert("회원가입에 실패하셨습니다.");
-            }
-          });
+        // dispatch(registerUser(body)).then((res) => {
+        //     if (res.payload.success) {
+        //       navigate("/login");
+        //     } else {
+        //       alert("회원가입에 실패하셨습니다.");
+        //     }
+        //   });
 
 
       
