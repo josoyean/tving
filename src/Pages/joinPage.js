@@ -1,5 +1,7 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import {useNavigate} from "react-router-dom";
 import Nav from '../components/Nav';
 import './JoinPage.css';
 import './Login.css';
@@ -9,7 +11,7 @@ function JoinPage() {
     const [password ,setPassword] = useState('');
     const [confirmPassword,setConfirmPassword] = useState('');
     const [eyesIcon,setEyesIcon] = useState(true);
-    
+    const replace = useNavigate();
     const textChange=(e)=>{
       
         let text = e.target.parentElement.querySelector(".text");
@@ -47,24 +49,24 @@ function JoinPage() {
        
        document.querySelector(".doJoinBtn").classList.remove("active");
         if(document.querySelectorAll(".text")[0].value.length === 0){
-            alert("ID를 입력해주세요.");
-            document.querySelectorAll(".text")[0].focus();
+            // alert("ID를 입력해주세요.");
+            // document.querySelectorAll(".text")[0].focus();
             return
         }
         
         if(document.querySelectorAll(".text")[1].value.length === 0){
-            alert("비밀번호를 입력해주세요.");
-            document.querySelectorAll(".text")[1].focus();
+            // alert("비밀번호를 입력해주세요.");
+            // document.querySelectorAll(".text")[1].focus();
             return
         }
         if(document.querySelectorAll(".text")[2].value.length === 0){
-            alert("비밀번호를 입력해주세요.");
-            document.querySelectorAll(".text")[2].focus();
+            // alert("비밀번호를 입력해주세요.");
+            // document.querySelectorAll(".text")[2].focus();
             return
         }
         if(document.querySelectorAll(".text")[3].value.length === 0){
-            alert("이메일을 입력해주세요.");
-            document.querySelectorAll(".text")[3].focus();
+            // alert("이메일을 입력해주세요.");
+            // document.querySelectorAll(".text")[3].focus();
             return
         }
         
@@ -117,20 +119,27 @@ idIcon.style.display="none";
             
         }
 
-        let body = {
-            email: email,
-            id: id,
-            password: password,
-            confirmPassword: confirmPassword,
-        }
-
-        // dispatch(registerUser(body)).then((res) => {
-        //     if (res.payload.success) {
-        //       navigate("/login");
-        //     } else {
-        //       alert("회원가입에 실패하셨습니다.");
-        //     }
-        //   });
+          axios.post('https://koreanjson.com/Users/1', {
+          userid: id,
+          email: email,
+          password: password,
+        // username: 'Strapi user',
+        // email: 'user@strapi.io',
+        // password: 'strapiPassword',
+        })
+        .then(response => {
+          // Handle success.
+          console.log('Well done!');
+          console.log('User profile', response.data.user);
+          console.log('User token', response.data.jwt);
+          localStorage.setItem("token",response.data.jwt);
+        //   replace("/");
+        })
+        .catch(error => {
+          // Handle error.
+          console.log('An error occurred:', error.response);
+        });
+       
 
 
       
