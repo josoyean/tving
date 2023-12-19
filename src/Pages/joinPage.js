@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import styled from 'styled-components';
-import {useNavigate} from "react-router-dom";
 import Nav from '../components/Nav';
 import './JoinPage.css';
 import './Login.css';
@@ -11,7 +11,7 @@ function JoinPage() {
     const [password ,setPassword] = useState('');
     const [confirmPassword,setConfirmPassword] = useState('');
     const [eyesIcon,setEyesIcon] = useState(true);
-    const replace = useNavigate();
+    const movePage = useNavigate();
     const textChange=(e)=>{
       
         let text = e.target.parentElement.querySelector(".text");
@@ -119,26 +119,24 @@ idIcon.style.display="none";
             
         }
 
-          axios.post('https://koreanjson.com/Users/1', {
-          userid: id,
-          email: email,
-          password: password,
-        // username: 'Strapi user',
-        // email: 'user@strapi.io',
-        // password: 'strapiPassword',
-        })
-        .then(response => {
-          // Handle success.
-          console.log('Well done!');
-          console.log('User profile', response.data.user);
-          console.log('User token', response.data.jwt);
-          localStorage.setItem("token",response.data.jwt);
-        //   replace("/");
-        })
-        .catch(error => {
-          // Handle error.
-          console.log('An error occurred:', error.response);
-        });
+        axios
+  .post('http://localhost:1337/api/auth/local/register', {
+    username: id,
+    email: email,
+    password: password,
+  })
+  .then(response => {
+    console.log('Well done!');
+    console.log('User profile', response.data.user);
+    console.log('User token', response.data.jwt);
+   localStorage.setItem('token',response.data.jwt);
+    //movePage('/tving/login'); 
+    
+  })
+  .catch(error => {
+    // Handle error.
+    console.log('An error occurred:', error.response);
+  });
        
 
     }

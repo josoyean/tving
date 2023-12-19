@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
@@ -83,8 +84,17 @@ idIcon.style.display="none";
     }
 
     const ChangeCheck = (e) =>{
-
     }
+
+    
+    useEffect(() => {
+        axios.get('http://localhost:1337/api/register').then((response)=>{
+            console.log(response.data)
+          })
+          .catch((response)=>{
+            console.log('실패함',response)
+          })
+    });
 
 const JoinPage = () =>{
         movePage('/tving/join');
