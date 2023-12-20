@@ -87,14 +87,14 @@ idIcon.style.display="none";
     }
 
     
-    useEffect(() => {
-        axios.get('http://localhost:1337/api/register').then((response)=>{
-            console.log(response.data)
-          })
-          .catch((response)=>{
-            console.log('실패함',response)
-          })
-    });
+    // useEffect(() => {
+    //     axios.get('http://localhost:1337/api/register').then((response)=>{
+    //         console.log(response.data)
+    //       })
+    //       .catch((response)=>{
+    //         console.log('실패함',response)
+    //       })
+    // });
 
 const JoinPage = () =>{
         movePage('/tving/join');
