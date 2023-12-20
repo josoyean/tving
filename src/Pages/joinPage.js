@@ -113,24 +113,29 @@ idIcon.style.display="none";
     const MainPageMove = (e) => {
         e.preventDefault();
         if(e.target.classList.contains("active") === false) return
-        
+        console.log(password);
         if(confirmPassword !== password ){
             return  alert("비밀번호가 일치하지 않습니다. 확인해주세요.");
             
         }
 
-        axios
-  .post('http://localhost:1337/api/auth/local/register', {
-    username: id,
-    email: email,
-    password: password,
+        axios.post('http://localhost:1337/api/user-infors', {
+    data:{
+        password: escape(password),
+        name: id,
+        email: email,
+        autologin:false,
+    },
   })
   .then(response => {
     console.log('Well done!');
     console.log('User profile', response.data.user);
     console.log('User token', response.data.jwt);
-   localStorage.setItem('token',response.data.jwt);
-    //movePage('/tving/login'); 
+    console.log('User token', response.data.data.attributes);
+    console.log('User token', response);
+   //localStorage.setItem('token',response.data.jwt);
+  alert("가입이 완료 되었습니다.");
+   movePage('/tving/login'); 
     
   })
   .catch(error => {
