@@ -8,6 +8,9 @@ function Login() {
     const [idValue,setId] = useState('');
     const [passwordValue,setPassword] = useState('');
     const [eyesIcon,setEyesIcon] = useState(true);
+    const [autologin,setAutologin] = useState(false);
+    const [userInfor,setUserInfor] = useState([]);
+
     useEffect(()=>{
         let idText = document.querySelector(".id-wrap .text");
         idText.focus();
@@ -17,7 +20,32 @@ function Login() {
     const movePage = useNavigate();
     
     const MainPageMove = ()=>{
-        movePage('/tving/main'); 
+
+        console.log(autologin)
+        // if(idValue.length === 0){
+        //     alert("아이디를 입력해주세요.");
+        //     return
+        // }
+        
+        // if(passwordValue.length === 0){
+        //     alert("비밀번호를 입력해주세요.");
+        //     return
+        // } 
+
+        userInfor.map(function(items){
+            let dataId = items.attributes.name;
+            let dataPassword = items.attributes.password;
+            
+            if(dataId === idValue && dataPassword === passwordValue){
+            
+                movePage('/tving/main');
+                if(autologin === true){
+                    //값을 줘야함
+                }
+            }
+        });
+        console.log("안녕")
+        // movePage('/tving/main'); 
       }
 
     const Preparing = () =>{
@@ -84,18 +112,22 @@ idIcon.style.display="none";
     }
 
     const ChangeCheck = (e) =>{
+        console.log(e.target.checked)
+        setAutologin(e.target.checked);
+      
     }
 
     
     useEffect(() => {
         axios.get('http://localhost:1337/api/user-infors').then((response)=>{
             console.log(response.data)
+            setUserInfor(response.data.data);
             console.log(response.data.password)
           })
           .catch((response)=>{
             console.log('실패함',response)
           })
-    });
+    },[]);
 
 const JoinPage = () =>{
         movePage('/tving/join');
