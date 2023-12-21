@@ -113,10 +113,9 @@ idIcon.style.display="none";
     const MainPageMove = (e) => {
         e.preventDefault();
         if(e.target.classList.contains("active") === false) return
-        console.log(password);
+    
         if(confirmPassword !== password ){
             return  alert("비밀번호가 일치하지 않습니다. 확인해주세요.");
-            
         }
 
         axios.post('http://localhost:1337/api/user-infors', {
@@ -128,14 +127,11 @@ idIcon.style.display="none";
     },
   })
   .then(response => {
-    console.log('Well done!');
-    console.log('User profile', response.data.user);
-    console.log('User token', response.data.jwt);
+   // console.log('Well done!');
     console.log('User token', response.data.data.attributes);
-    console.log('User token', response);
-   //localStorage.setItem('token',response.data.jwt);
+  
   alert("가입이 완료 되었습니다.");
-   movePage('/tving/login'); 
+  movePage('/tving/login'); 
     
   })
   .catch(error => {

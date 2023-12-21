@@ -8,7 +8,7 @@ function Login() {
     const [idValue,setId] = useState('');
     const [passwordValue,setPassword] = useState('');
     const [eyesIcon,setEyesIcon] = useState(true);
-    const [autologin,setAutologin] = useState(false);
+    const [autoLogin,setautoLogin] = useState(false);
     const [userInfor,setUserInfor] = useState([]);
 
     useEffect(()=>{
@@ -20,34 +20,51 @@ function Login() {
     const movePage = useNavigate();
     
     const MainPageMove = ()=>{
-
-        // if(idValue.length === 0){
-        //     alert("아이디를 입력해주세요.");
-        //     return
-        // }
-        
-        // if(passwordValue.length === 0){
-        //     alert("비밀번호를 입력해주세요.");
-        //     return
-        // } 
-
-        userInfor.map(function(items){
-            let dataId = items.attributes.name;
-            let dataPassword = items.attributes.password;
-            
-            if(dataId === idValue && dataPassword === passwordValue){
-            
-                movePage('/tving/main');
-                if(autologin === true){
-                    //값을 줘야함
-                }
-            }
-        });
     
+      let idPasswordInfor = userInfor.find(idPassword);
+      let idPasswordInforBox = userInfor.find(idPassword);
+      
+        if(idPasswordInfor){
+            // if(idPasswordInforBox.attributes.autoLogin !== autoLogin){
+            //     axios.patch(`http://localhost:1337/api/user-infors/:${idPasswordInforBox.id}`, {
+            //         data:{
+            //             autologin:autoLogin,
+            //         },
+            //       })
+            //       .then(response => {
+            //        // console.log('Well done!');
+            //         console.log('User token', response.data);
+                    
+            //       })
+            //       .catch(error => {
+            //         // Handle error.
+            //         console.log('An error occurred:', error.response);
+            //       });
+            // }
+    
+          movePage("/tving/main");
+        }else{
+            alert("회원 정보가 없습니다. 가입해주세요.");
+        }
+        
+    }
+    function idPassword(element) {
+        
+    if(element.attributes.name === idValue && element.attributes.password === passwordValue ||(idValue.length===0 && passwordValue.length===0 ))  {
+        return true;
       }
+}
+
+function idPasswordInforBox(element) {
+    if(element.attributes.name === idValue && element.attributes.password === passwordValue ||(idValue.length===0 && passwordValue.length===0 ))  {
+       // console.log(element)
+        return element.attributes;
+      }
+}
+
 
     const Preparing = () =>{
-        alert('작업중입니다. :) 로그인 버튼 클릭 부탁드립니다.');
+        alert('회원 가입 통해 로그인 하시거나 빈 값으로 로그인 해주시면 됩니다.');
     
     }
 
@@ -110,17 +127,13 @@ idIcon.style.display="none";
     }
 
     const ChangeCheck = (e) =>{
-        console.log(e.target.checked)
-        setAutologin(e.target.checked);
-      
+        setautoLogin(e.target.checked);
     }
 
     
     useEffect(() => {
         axios.get('http://localhost:1337/api/user-infors').then((response)=>{
-            console.log(response.data)
             setUserInfor(response.data.data);
-            console.log(response.data.password)
           })
           .catch((response)=>{
             console.log('실패함',response)
