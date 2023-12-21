@@ -21,7 +21,6 @@ function Login() {
     
     const MainPageMove = ()=>{
 
-        console.log(autologin)
         // if(idValue.length === 0){
         //     alert("아이디를 입력해주세요.");
         //     return
@@ -44,8 +43,7 @@ function Login() {
                 }
             }
         });
-        console.log("안녕")
-        // movePage('/tving/main'); 
+    
       }
 
     const Preparing = () =>{
