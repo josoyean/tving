@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tving/static/css/main.da81a262.css",
-    "main.js": "/tving/static/js/main.ba559b6d.js",
+    "main.js": "/tving/static/js/main.79bad31f.js",
     "static/js/787.0202b8b0.chunk.js": "/tving/static/js/787.0202b8b0.chunk.js",
     "static/media/tving-bg.webp": "/tving/static/media/tving-bg.e64f1d799951c595dd98.webp",
     "static/media/tving-gradatrion.png": "/tving/static/media/tving-gradatrion.d9671ba6b842279ec86b.png",
@@ -16,11 +16,11 @@
     "static/media/check-off.svg": "/tving/static/media/check-off.0f14ce6a86f7c5608909.svg",
     "static/media/check-on.svg": "/tving/static/media/check-on.cd1f49e9b414f4a9070c.svg",
     "main.da81a262.css.map": "/tving/static/css/main.da81a262.css.map",
-    "main.ba559b6d.js.map": "/tving/static/js/main.ba559b6d.js.map",
+    "main.79bad31f.js.map": "/tving/static/js/main.79bad31f.js.map",
     "787.0202b8b0.chunk.js.map": "/tving/static/js/787.0202b8b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da81a262.css",
-    "static/js/main.ba559b6d.js"
+    "static/js/main.79bad31f.js"
   ]
 }
