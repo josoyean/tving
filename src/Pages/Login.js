@@ -23,8 +23,7 @@ function Login() {
     
       let idPasswordInfor = userInfor.find(idPassword);
       let idPasswordInforBox = userInfor.find(idPassword);
-      
-        if(idPasswordInfor){
+        if(idPasswordInfor || (idValue === "" && passwordValue === "")){
             // if(idPasswordInforBox.attributes.autoLogin !== autoLogin){
             //     axios.patch(`http://localhost:1337/api/user-infors/:${idPasswordInforBox.id}`, {
             //         data:{
