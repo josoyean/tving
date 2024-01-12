@@ -65,7 +65,16 @@
   font-size: 13px;
   color: #fff;
 }
-.main-box .main-infor .button-box button {
+.main-box .button-box {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.main-box .button-box button {
+  background-color: transparent;
+  border: none;
+}
+.main-box .main-infor .button-box button.play-btn {
   background-color: rgb(255, 255, 255);
   font-size: 1.2rem;
   font-weight: 700;
@@ -74,5 +83,45 @@
   box-sizing: border-box;
   padding: 1rem 4rem;
   border: none;
+  position: relative;
   color: rgb(0, 0, 0);
+}
+.main-box .button-box button.play-btn::after {
+  display: block;
+  content: "►";
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+}
+.main-box .button-box button.like-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+.main-box .button-box button.like-btn.action g {
+  fill: #fff;
+}
+.main-box .button-box button.like-btn span {
+  color: #fff;
+}
+.videoPoster {
+  width: 100%;
+  height: 153px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.video-box > span {
+  font-size: 1rem;
+  color: #f7f7f782;
+}
+.video-box > span.inform {
+  font-size: 0.8rem;
+}
+.video-list-box {
+  display: flex;
+  column-gap: 20px;
+  padding: 40px 10px;
+  box-sizing: border-box;
 }
