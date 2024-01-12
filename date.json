@@ -9,11 +9,41 @@
       "date": "20231007",
       "genre": "판타지",
       "type": "드라마",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "days": [{ "day": "mon" }, { "day": "tue" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231029/1529/P001746797.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231029/1529/P001746797.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231029/1529/P001746797.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231029/1529/P001746797.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231029/1529/P001746797.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231029/1529/P001746797.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231029/1529/P001746797.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 2,
@@ -24,10 +54,47 @@
       "date": "20230925",
       "genre": "판타지",
       "type": "드라마",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "days": [{ "day": "mon" }, { "day": "tue" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230831/P001743591.jpg/dims/resize/480",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230831/P001743591.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230831/P001743591.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230831/P001743591.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230831/P001743591.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230831/P001743591.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ],
       "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20230831/P001743591.jpg/dims/resize/1280"
     },
     {
@@ -39,11 +106,36 @@
       "date": "20231007",
       "genre": "",
       "type": "예능",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "fri" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230926/P001747179.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20230926/P001747179.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20230926/P001747179.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230926/P001747179.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230926/P001747179.jpg/dims/resize/480",
+
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230926/P001747179.jpg/dims/resize/480",
+
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 4,
@@ -54,11 +146,69 @@
       "date": "20221007",
       "genre": "코믹",
       "type": "애니메이션",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caim/CAIP1500/ko/20221102/M000370074.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caim/CAIP1500/ko/20221102/M000370074.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20221102/M000370074.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 5,
@@ -69,11 +219,20 @@
       "date": "20160111",
       "genre": "추리",
       "type": "애니메이션",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20220725/M000368408.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caim/CAIP1500/ko/20220725/M000368408.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caim/CAIP1500/ko/20220725/M000368408.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20220725/M000368408.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 6,
@@ -84,11 +243,62 @@
       "date": "20180407",
       "genre": "",
       "type": "예능",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "days": [{ "day": "sat" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20180331/P000515167.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20180331/P000515167.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180331/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 7,
@@ -99,11 +309,27 @@
       "date": "20230823",
       "genre": "로맨스",
       "type": "드라마",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "days": [{ "day": "wed" }, { "day": "thu" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230725/P001740125.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20230725/P001740125.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20230725/P001740125.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230725/P001740125.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230725/P001740125.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 8,
@@ -114,11 +340,20 @@
       "date": "20101208",
       "genre": "로맨스",
       "type": "영화",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "days": [{ "day": "" }],
       "thumbnail": "https://image.tving.com/upload/cms/caim/CAIM2100/M000260133.jpg/dims/resize/480",
-      "background": "https://image.tving.com/upload/cms/caim/CAIM2100/M000260133.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/upload/cms/caim/CAIM2100/M000260133.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caim/CAIM2100/M000260133.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 9,
@@ -128,12 +363,56 @@
       "views": "13874",
       "date": "20220606",
       "genre": "",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "type": "예능",
       "days": [{ "day": "mon" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20220602/P001609758.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 10,
@@ -143,12 +422,42 @@
       "views": "1548",
       "date": "20230114",
       "genre": "드라마",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "type": "드라마",
       "days": [{ "day": "sat" }, { "day": "sun" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230107/P001685600.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230107/P001685600.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230107/P001685600.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230107/P001685600.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230107/P001685600.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230107/P001685600.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230107/P001685600.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 11,
@@ -159,11 +468,34 @@
       "date": "20230426",
       "genre": "가족",
       "type": "드라마",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "days": [{ "day": "wed" }, { "day": "thu" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230421/P001712373.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230421/P001712373.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230421/P001712373.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230421/P001712373.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230421/P001712373.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230421/P001712373.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 21,
@@ -174,11 +506,27 @@
       "date": "20181123",
       "genre": "범죄",
       "type": "드라마",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "sat" }, { "day": "fri" }],
       "thumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P000722244.jpg/dims/resize/480",
-      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P000722244.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P000722244.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P000722244.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P000722244.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 12,
@@ -189,11 +537,41 @@
       "date": "20220715",
       "genre": "리알리티",
       "type": "예능",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "fri" }],
       "thumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001613931.jpg/dims/resize/480",
-      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P001613931.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P001613931.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001613931.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001613931.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001613931.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001613931.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 13,
@@ -204,11 +582,48 @@
       "date": "20220217",
       "genre": "리알리티",
       "type": "예능",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "mon" }],
       "thumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/480",
-      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001563049.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 14,
@@ -219,11 +634,20 @@
       "date": "20180910",
       "genre": "사극",
       "type": "드라마",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "mon" }, { "day": "tue" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180907/P000657356.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180907/P000657356.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180907/P000657356.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20180907/P000657356.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 15,
@@ -233,12 +657,35 @@
       "views": "154871",
       "date": "20191214",
       "genre": "사극",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "type": "드라마",
       "days": [{ "day": "sat" }, { "day": "sun" }],
       "thumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001097347.jpg/dims/resize/480",
-      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P001097347.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P001097347.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001097347.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001097347.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001097347.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 16,
@@ -248,12 +695,42 @@
       "views": "121547",
       "date": "20230627",
       "genre": "판타지",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "type": "드라마",
       "days": [{ "day": "sun" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230610/P001725512.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230610/P001725512.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230610/P001725512.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230610/P001725512.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230610/P001725512.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230610/P001725512.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230610/P001725512.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 17,
@@ -264,11 +741,20 @@
       "date": "20210617",
       "genre": "드라마",
       "type": "드라마",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "thu" }],
       "thumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001178341.png/dims/resize/480",
-      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P001178341.png/dims/resize/1280"
+      "background": "https://image.tving.com/upload/cms/caip/CAIP0900/P001178341.png/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caip/CAIP0900/P001178341.png/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 18,
@@ -279,11 +765,20 @@
       "date": "20190115",
       "genre": "공포",
       "type": "영화",
-      "new":true,
-      "only":false,
+      "new": true,
+      "only": false,
       "days": [{ "day": "mon" }],
       "thumbnail": "https://image.tving.com/upload/cms/caim/CAIM2100/M000364140.jpg/dims/resize/480",
-      "background": "https://image.tving.com/upload/cms/caim/CAIM2100/M000364140.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/upload/cms/caim/CAIM2100/M000364140.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/upload/cms/caim/CAIM2100/M000364140.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 19,
@@ -294,11 +789,20 @@
       "date": "20150924",
       "genre": "코믹",
       "type": "영화",
-      "new":false,
-      "only":false,
+      "new": false,
+      "only": false,
       "days": [{ "day": "" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20190626/M000238033.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20190626/M000238033.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20190626/M000238033.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caim/CAIM2100/ko/20190626/M000238033.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 20,
@@ -308,12 +812,63 @@
       "views": "157763",
       "date": "20230913",
       "genre": "코믹",
-      "new":false,
-      "only":true,
+      "new": false,
+      "only": true,
       "type": "드라마",
       "days": [{ "day": "wed" }, { "day": "thu" }],
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20230908/P001746392.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1500/ko/20230908/P001746392.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20230908/P001746392.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 21,
@@ -323,10 +878,68 @@
       "views": "1016",
       "date": "20231007",
       "type": "예능",
-      "new":true,
-      "only":true,
+      "new": true,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231026/1615/P001748083.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 22,
@@ -336,10 +949,47 @@
       "views": "1016",
       "date": "20231007",
       "type": "예능",
-      "new":true,
-      "only":true,
+      "new": true,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1110/ko/20231123/0539/P001747179.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1110/ko/20231123/0539/P001747179.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1110/ko/20231123/0539/P001747179.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1110/ko/20231123/0539/P001747179.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1110/ko/20231123/0539/P001747179.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1110/ko/20231123/0539/P001747179.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1110/ko/20231123/0539/P001747179.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1110/ko/20231123/0539/P001747179.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 23,
@@ -349,10 +999,33 @@
       "views": "1016",
       "date": "20231007",
       "type": "드라마",
-      "new":false,
-      "only":true,
+      "new": false,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1120/ko/20231124/0313/P001746510.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1120/ko/20231124/0313/P001746510.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1120/ko/20231124/0313/P001746510.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1120/ko/20231124/0313/P001746510.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1120/ko/20231124/0313/P001746510.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1120/ko/20231124/0313/P001746510.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 24,
@@ -362,10 +1035,47 @@
       "views": "1016",
       "date": "20231007",
       "type": "예능",
-      "new":true,
-      "only":true,
+      "new": true,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231121/0126/P001749344.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231121/0126/P001749344.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231121/0126/P001749344.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231121/0126/P001749344.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231121/0126/P001749344.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231121/0126/P001749344.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231121/0126/P001749344.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231121/0126/P001749344.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 25,
@@ -375,10 +1085,33 @@
       "views": "1016",
       "date": "20231007",
       "type": "예능",
-      "new":false,
-      "only":true,
+      "new": false,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231212/2030/P001747227.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231212/2030/P001747227.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231212/2030/P001747227.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231212/2030/P001747227.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231212/2030/P001747227.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231212/2030/P001747227.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 26,
@@ -388,10 +1121,33 @@
       "views": "1016",
       "date": "20231007",
       "type": "예능",
-      "new":false,
-      "only":true,
+      "new": false,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231027/1525/P001748082.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231027/1525/P001748082.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231027/1525/P001748082.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231027/1525/P001748082.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231027/1525/P001748082.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231027/1525/P001748082.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 27,
@@ -401,10 +1157,61 @@
       "views": "1016",
       "date": "20231007",
       "type": "예능",
-      "new":false,
-      "only":true,
+      "new": false,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231030/0130/P001392765.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 28,
@@ -414,10 +1221,26 @@
       "views": "1016",
       "date": "20231007",
       "type": "예능",
-      "new":false,
-      "only":true,
+      "new": false,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231028/1210/P000515167.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231028/1210/P000515167.jpg/dims/resize1280"
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231028/1210/P000515167.jpg/dims/resize1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231028/1210/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP0900/ko/20231028/1210/P000515167.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
     },
     {
       "id": 29,
@@ -427,9 +1250,61 @@
       "views": "1016",
       "date": "20231007",
       "type": "드라마",
-      "new":false,
-      "only":true,
+      "new": false,
+      "only": true,
       "thumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/480",
-      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/1280"
-    }]
+      "background": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/1280",
+      "videoList": [
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        },
+        {
+          "videoTitle": "영상제목",
+          "videoThumbnail": "https://image.tving.com/ntgs/contents/CTC/caip/CAIP1190/ko/20231113/0825/P001565742.jpg/dims/resize/480",
+          "videoDate": "24.01.01",
+          "videoTime": "64",
+          "videoinform": "영상소개영상소개영상소개영상소개영상소개영상소개영상소개영상소개"
+        }
+      ]
+    }
+  ]
 }
