@@ -21,8 +21,10 @@ function VideoComponert({ videoInfom, count }) {
 export default VideoComponert;
 
 const VideoBox = styled.div`
-  width: 270px;
+  width: 250px;
   display: flex;
+  height: 100%;
+  min-width: 250px;
   flex-direction: column;
   row-gap: 10px;
 `;

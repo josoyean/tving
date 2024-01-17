@@ -49,7 +49,6 @@ const Row = ({ title, id, program }) => {
                     clickProgran(topProgram, e);
                   }}
                 >
-                  {" "}
                   <TopProgramNum>{numProgram + 1}</TopProgramNum>{" "}
                   <img
                     className="row__poster"
@@ -84,6 +83,7 @@ export default Row;
 
 const Title = styled.h2`
   color: #fff;
+  text-align: center;
 `;
 const TopProgramNum = styled.span`
   color: #fff;

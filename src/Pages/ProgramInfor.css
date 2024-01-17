@@ -119,9 +119,29 @@
 .video-box > span.inform {
   font-size: 0.8rem;
 }
+.video-list {
+  position: relative;
+  padding: 40px 20px;
+}
 .video-list-box {
   display: flex;
   column-gap: 20px;
-  padding: 40px 10px;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  overflow-x: auto;
   box-sizing: border-box;
+}
+.video-list > span {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.video-list > span.left {
+  left: 0;
+}
+.video-list > span.right {
+  right: 0;
 }

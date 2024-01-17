@@ -11,6 +11,8 @@ const ProgramInfor = () => {
   const [isLikeBtn, setIsLikeBtn] = useState(false);
   console.log("userInfo", userInfo);
   useEffect(() => {
+    console.log("userInfo", document.getElementById("video-box").scrollLeft);
+    console.log("userInfo", window.innerWidth);
     alert("작업중입니다.");
   }, []);
 
@@ -62,16 +64,36 @@ const ProgramInfor = () => {
           <img alt="thumbnail" src={userInfo.thumbnail}></img>
         </div>
       </div>
-      <div className="video-list-box">
-        {userInfo.videoList.map((item, index) => {
-          return (
-            <VideoComponert
-              key={index}
-              count={index + 1}
-              videoInfom={item}
-            ></VideoComponert>
-          );
-        })}
+      <div className="video-list">
+        <span
+          className="left"
+          onClick={() => {
+            document.getElementById("video-box").scrollLeft -=
+              window.innerWidth + 80;
+          }}
+        >
+          {"<"}
+        </span>
+        <div className="video-list-box" id="video-box">
+          {userInfo.videoList.map((item, index) => {
+            return (
+              <VideoComponert
+                key={index}
+                count={index + 1}
+                videoInfom={item}
+              ></VideoComponert>
+            );
+          })}
+        </div>
+        <span
+          className="right"
+          onClick={() => {
+            document.getElementById("video-box").scrollLeft +=
+              window.innerWidth + 80;
+          }}
+        >
+          {">"}
+        </span>
       </div>
     </div>
   );
