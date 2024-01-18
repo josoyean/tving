@@ -1,24 +1,39 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "../Pages/ProgramInfor.css";
 import Nav from "../components/Nav";
+import Row from "../components/Row";
 import VideoComponert from "../components/VideoComponert";
 
 const ProgramInfor = () => {
   const location = useLocation();
   const userInfo = { ...location.state };
   const [programData, setprogramData] = useState();
+  const [contentsData, setContentsData] = useState();
   const [isLikeBtn, setIsLikeBtn] = useState(false);
   console.log("userInfo", userInfo);
   useEffect(() => {
-    console.log("userInfo", document.getElementById("video-box").scrollLeft);
-    console.log("userInfo", window.innerWidth);
     alert("작업중입니다.");
+    fetchData();
   }, []);
 
   const LikeClick = (e) => {
     setIsLikeBtn(!isLikeBtn);
   };
+  const fetchData = async () => {
+    const apiUrl = "date.json";
+    const response = await axios.get(apiUrl);
+    setprogramData(response.data.tvingList);
+  };
+  useEffect(() => {
+    const result =
+      programData &&
+      programData.filter((item) => {
+        return item.genre === userInfo.genre;
+      });
+    setContentsData(result);
+  }, [fetchData]);
 
   return (
     <div>
@@ -94,6 +109,13 @@ const ProgramInfor = () => {
         >
           {">"}
         </span>
+      </div>
+      <div className="relate-box">
+        <Row
+          title="비슷한 콘텐츠"
+          id="relate-content"
+          program={contentsData}
+        ></Row>
       </div>
     </div>
   );

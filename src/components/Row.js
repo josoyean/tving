@@ -10,9 +10,11 @@ const Row = ({ title, id, program }) => {
   const movePage = useNavigate();
 
   const fetchMovieData = useCallback(() => {
-    let programViews = program.sort((a, b) => {
-      return b.views - a.views;
-    });
+    let programViews =
+      program &&
+      program.sort((a, b) => {
+        return b.views - a.views;
+      });
     setTopProgram(programViews);
   }, [program]);
 
@@ -40,28 +42,29 @@ const Row = ({ title, id, program }) => {
           <span className="arrow">{"<"}</span>
         </div>
         <div id={id} className="row__posters">
-          {program.map(
-            (topProgram, numProgram) =>
-              numProgram + 1 <= 10 && (
-                <div
-                  key={topProgram.id}
-                  onClick={(e) => {
-                    clickProgran(topProgram, e);
-                  }}
-                >
-                  <TopProgramNum>{numProgram + 1}</TopProgramNum>{" "}
-                  <img
-                    className="row__poster"
+          {program &&
+            program.map(
+              (topProgram, numProgram) =>
+                numProgram + 1 <= 10 && (
+                  <div
                     key={topProgram.id}
-                    src={topProgram.thumbnail}
-                    alt={topProgram.title}
-                  ></img>
-                  {topProgram.new === true && (
-                    <span className="newLable">NEW</span>
-                  )}
-                </div>
-              )
-          )}
+                    onClick={(e) => {
+                      clickProgran(topProgram, e);
+                    }}
+                  >
+                    <TopProgramNum>{numProgram + 1}</TopProgramNum>{" "}
+                    <img
+                      className="row__poster"
+                      key={topProgram.id}
+                      src={topProgram.thumbnail}
+                      alt={topProgram.title}
+                    ></img>
+                    {topProgram.new === true && (
+                      <span className="newLable">NEW</span>
+                    )}
+                  </div>
+                )
+            )}
         </div>
         <div
           className="slider__arrow-right"
