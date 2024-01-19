@@ -14,7 +14,6 @@ const Nav = ({ top }) => {
       } else {
         setHandleShow(false);
       }
-
       setLogoutShow(false);
     });
 
