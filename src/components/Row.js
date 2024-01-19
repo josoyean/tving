@@ -20,7 +20,8 @@ const Row = ({ title, id, program }) => {
 
   useEffect(() => {
     fetchMovieData();
-  }, [fetchMovieData]);
+    // console.log("program", program);
+  }, [program]);
 
   const hendleClick = (movie) => {
     setModalOpen(true);

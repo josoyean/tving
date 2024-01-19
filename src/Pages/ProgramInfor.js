@@ -12,7 +12,7 @@ const ProgramInfor = () => {
   const [programData, setprogramData] = useState();
   const [contentsData, setContentsData] = useState();
   const [isLikeBtn, setIsLikeBtn] = useState(false);
-  console.log("userInfo", userInfo);
+  // console.log("userInfo", userInfo);
   useEffect(() => {
     alert("작업중입니다.");
     fetchData();
@@ -33,7 +33,7 @@ const ProgramInfor = () => {
         return item.genre === userInfo.genre;
       });
     setContentsData(result);
-  }, [fetchData]);
+  }, [programData]);
 
   return (
     <div>
@@ -43,9 +43,15 @@ const ProgramInfor = () => {
         <div className="main-infor">
           <span className="title">{userInfo.title}</span>
           <div className="infor">
-            <span>{userInfo.channel}</span>
-            <span>{userInfo.genre}</span>
-            <span>{userInfo.type}</span>
+            <span className={userInfo.channel === "" ? "hide" : null}>
+              {userInfo.channel}
+            </span>
+            <span className={userInfo.genre === "" ? "hide" : null}>
+              {userInfo.genre}
+            </span>
+            <span className={userInfo.type === "" ? "hide" : null}>
+              {userInfo.type}
+            </span>
           </div>
           <div className="button-box">
             <button className="play-btn">

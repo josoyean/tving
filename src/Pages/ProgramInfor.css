@@ -57,6 +57,9 @@
   color: #fff;
   border-radius: 3px;
 }
+.main-box .infor span.hide {
+  display: none;
+}
 .main-box .main-infor .inform-text {
   text-align: left;
   margin-top: 15px;

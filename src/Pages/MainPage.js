@@ -1,65 +1,80 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 // import styled from 'styled-components'
-import '../Pages/MainPage.css';
-import Banner from '../components/Banner';
-import Nav from '../components/Nav';
+import "../Pages/MainPage.css";
+import Banner from "../components/Banner";
+import Nav from "../components/Nav";
 import Row from "../components/Row";
 const MainPage = () => {
   const movePage = useNavigate();
-  const [program,setProgram] = useState([]);
-  const [mainProgram,setMainProgram] = useState([]);
-  const [onlyTvingProgram,setOnlyTvingProgram]=useState([]);
-  const [movie,setMovie]=useState([]);
-  useEffect(()=>{
+  const [program, setProgram] = useState([]);
+  const [mainProgram, setMainProgram] = useState([]);
+  const [onlyTvingProgram, setOnlyTvingProgram] = useState([]);
+  const [movie, setMovie] = useState([]);
+  const [drama, setDrama] = useState([]);
+  const [entertainment, setEntertainment] = useState([]);
+  useEffect(() => {
     fetchData();
-    alert('작업중입니다. :)');
-  },[])
-  
-  const fetchData = async() => {
-    const apiUrl = 'date.json';
+    alert("작업중입니다. :)");
+  }, []);
+
+  const fetchData = async () => {
+    const apiUrl = "date.json";
     const response = await axios.get(apiUrl);
     setProgram(response.data.tvingList);
-}
+  };
 
-useEffect(()=>{
-  let onlyArray=[];
-  let movieArray=[];
-  for (let index = 0; index < program.length; index++) {
-    const element = program[index];
-    if(element.only === true){
-      onlyArray.push(element);
+  useEffect(() => {
+    let onlyArray = [];
+    let movieArray = [];
+    let entertainmentArray = [];
+    let dramaArray = [];
+    for (let index = 0; index < program.length; index++) {
+      const element = program[index];
+      if (element.only === true) {
+        onlyArray.push(element);
+      }
+
+      if (element.type === "예능") {
+        entertainmentArray.push(element);
+      }
+
+      if (element.type === "영화") {
+        movieArray.push(element);
+      }
+
+      if (element.type === "드라마") {
+        dramaArray.push(element);
+      }
     }
-
-    if(element.type === "예능"){
-      movieArray.push(element);
-    }
-
-  }
-  setMovie(movieArray);
-  setOnlyTvingProgram(onlyArray);
-},[program]);
-
-
+    setMovie(movieArray);
+    setOnlyTvingProgram(onlyArray);
+    setEntertainment(entertainmentArray);
+    setDrama(dramaArray);
+  }, [program]);
 
   return (
     <div>
-    <Nav top={true}></Nav>
-    <Banner program={program !== '' ? program :" "}></Banner>
-    <Row title='티빙 TOP 20 프로그램' id='top' program={program}></Row>
-    <Row title='오직! TVING에서만!!' id='only' program={onlyTvingProgram}></Row>
-    <Row title='인기 예능' id='movie' program={movie}></Row>
-  
-  </div>
-  )
-
-}
-export default MainPage
+      <Nav top={true}></Nav>
+      <Banner program={program !== "" ? program : " "}></Banner>
+      <Row title="티빙 TOP 20 프로그램" id="top" program={program}></Row>
+      <Row
+        title="오직! TVING에서만!!"
+        id="only"
+        program={onlyTvingProgram}
+      ></Row>
+      <Row title="인기 예능" id="entertainment" program={entertainment}></Row>
+      <Row title="인기 드라마" id="drama" program={drama}></Row>
+      <Row title="인기 영화" id="movie" program={movie}></Row>
+    </div>
+  );
+};
+export default MainPage;
 
 const Contaner = styled.main`
-    background-color: #000;
+  background-color: #000;
   position: relative;
   min-height: calc(100vh - 250px);
   overflow-x: hidden;
@@ -75,4 +90,4 @@ const Contaner = styled.main`
     opacity: 1;
     z-index: -1;
   }
-`
+`;
