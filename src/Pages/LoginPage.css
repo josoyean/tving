@@ -247,3 +247,18 @@ button.tving-button i {
 .mainNavtrue {
   background-color: #000;
 }
+.logout-box {
+  position: absolute;
+  top: 72px;
+  right: 36px;
+  padding: 10px;
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #4d4d4d;
+  background-color: #212121;
+  border-radius: 2px;
+  color: #a3a3a3;
+  letter-spacing: 0px;
+  cursor: pointer;
+  box-sizing: border-box;
+  /* background-color: #a3a3a3; */
+}

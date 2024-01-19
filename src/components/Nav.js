@@ -3,8 +3,10 @@ import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 const Nav = ({ top }) => {
   const [handleShow, setHandleShow] = useState(false);
+  const [logoutShow, setLogoutShow] = useState(false);
   const movePage = useNavigate();
   const location = useLocation();
+  // setLogoutShow(false);
   useEffect(() => {
     window.addEventListener("scroll", function () {
       if (window.scrollY > 72) {
@@ -12,7 +14,15 @@ const Nav = ({ top }) => {
       } else {
         setHandleShow(false);
       }
+
+      setLogoutShow(false);
     });
+
+    window.addEventListener("click", function (e) {
+      e.stopPropagation();
+      setLogoutShow(false);
+    });
+
     return () => {
       window.removeEventListener("scroll", function () {});
     };
@@ -30,9 +40,23 @@ const Nav = ({ top }) => {
     }
   };
 
+  const profileClick = (e) => {
+    e.stopPropagation();
+    setLogoutShow(!logoutShow);
+  };
+
+  const moveLoginPags = () => {
+    setLogoutShow(false);
+    movePage("/tving/login");
+  };
+
   if (top) {
     return (
-      <MainNavWrapper className={"mainNav" + handleShow}>
+      <MainNavWrapper
+        className={`mainNav${handleShow} ${
+          logoutShow ? "mainNavtrue" : "mainNavfalse"
+        }`}
+      >
         <div className="nav-left">
           <Logo>
             <img
@@ -45,14 +69,19 @@ const Nav = ({ top }) => {
           </Logo>
         </div>
         <div className="nav-right">
-          {/* <button className='icon search'></button> */}
-          <div className="profile-wrap">
+          <div className="profile-wrap" onClick={profileClick}>
             <img
               alt="profile"
               src={process.env.PUBLIC_URL + `/images/profile.jpg`}
             ></img>
           </div>
         </div>
+
+        {logoutShow && (
+          <div className="logout-box" onClick={moveLoginPags}>
+            <span>로그아웃</span>
+          </div>
+        )}
       </MainNavWrapper>
     );
   } else {
@@ -89,6 +118,7 @@ const NavWrapper = styled.nav`
   box-sizing: border-box;
   padding: 0 36px;
   letter-spacing: 16px;
+  position: relative;
   z-index: 99999;
   height: 72px;
   padding: 0 calc(3.5vw + 5px);
