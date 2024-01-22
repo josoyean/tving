@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tving/static/css/main.50cb3abb.css",
-    "main.js": "/tving/static/js/main.3ff6aa9a.js",
-    "static/js/787.0202b8b0.chunk.js": "/tving/static/js/787.0202b8b0.chunk.js",
+    "main.css": "/tving/static/css/main.8493b0d3.css",
+    "main.js": "/tving/static/js/main.bb603c85.js",
+    "static/js/787.9a165b5d.chunk.js": "/tving/static/js/787.9a165b5d.chunk.js",
     "static/media/tving-bg.webp": "/tving/static/media/tving-bg.e64f1d799951c595dd98.webp",
     "static/media/tving-gradatrion.png": "/tving/static/media/tving-gradatrion.d9671ba6b842279ec86b.png",
     "static/media/eyes-icon.svg": "/tving/static/media/eyes-icon.a8df5b66a7ceb32de118.svg",
@@ -12,15 +12,16 @@
     "static/media/icon_slide_left.svg": "/tving/static/media/icon_slide_left.096a0ee315f0f0a987b2.svg",
     "static/media/icon_slide_right.svg": "/tving/static/media/icon_slide_right.d5343610b9ebe7e2f76f.svg",
     "static/media/icon_search.svg": "/tving/static/media/icon_search.acf428f62f3d34908390.svg",
+    "static/media/x.svg": "/tving/static/media/x.f0b8fde0b4ab146ef849.svg",
     "static/media/close-icon.svg": "/tving/static/media/close-icon.be336bff0c75b19ed776.svg",
     "static/media/check-off.svg": "/tving/static/media/check-off.0f14ce6a86f7c5608909.svg",
     "static/media/check-on.svg": "/tving/static/media/check-on.cd1f49e9b414f4a9070c.svg",
-    "main.50cb3abb.css.map": "/tving/static/css/main.50cb3abb.css.map",
-    "main.3ff6aa9a.js.map": "/tving/static/js/main.3ff6aa9a.js.map",
-    "787.0202b8b0.chunk.js.map": "/tving/static/js/787.0202b8b0.chunk.js.map"
+    "main.8493b0d3.css.map": "/tving/static/css/main.8493b0d3.css.map",
+    "main.bb603c85.js.map": "/tving/static/js/main.bb603c85.js.map",
+    "787.9a165b5d.chunk.js.map": "/tving/static/js/787.9a165b5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50cb3abb.css",
-    "static/js/main.3ff6aa9a.js"
+    "static/css/main.8493b0d3.css",
+    "static/js/main.bb603c85.js"
   ]
 }
