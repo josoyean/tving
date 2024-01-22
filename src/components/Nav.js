@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-const Nav = ({ top }) => {
+const Nav = ({ top, searchClick, mainPage }) => {
   const [handleShow, setHandleShow] = useState(false);
   const [logoutShow, setLogoutShow] = useState(false);
   const movePage = useNavigate();
   const location = useLocation();
-  // setLogoutShow(false);
+
   useEffect(() => {
     window.addEventListener("scroll", function () {
       if (window.scrollY > 72) {
@@ -68,7 +68,10 @@ const Nav = ({ top }) => {
           </Logo>
         </div>
         <div className="nav-right">
-          <div className="profile-wrap" onClick={profileClick}>
+          <div className="search-box" onClick={searchClick}>
+            <i className={`icon ${mainPage ? "" : "close"}`}></i>
+          </div>
+          <div className="profile-wrap" onClick={(e) => profileClick(e)}>
             <img
               alt="profile"
               src={process.env.PUBLIC_URL + `/images/profile.jpg`}
@@ -117,7 +120,7 @@ const NavWrapper = styled.nav`
   box-sizing: border-box;
   padding: 0 36px;
   letter-spacing: 16px;
-  position: relative;
+  /* position: relative; */
   z-index: 99999;
   height: 72px;
   padding: 0 calc(3.5vw + 5px);

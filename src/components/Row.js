@@ -31,7 +31,7 @@ const Row = ({ title, id, program }) => {
     movePage("/tving/program", { state: topProgram });
   };
   return (
-    <div>
+    <RowBox>
       <Title>{title}</Title>
       <div className="slider">
         <div
@@ -79,7 +79,7 @@ const Row = ({ title, id, program }) => {
       {modalOpen && (
         <ModalIndex {...movieSelected} setModalOpen={setModalOpen}></ModalIndex>
       )}
-    </div>
+    </RowBox>
   );
 };
 
@@ -97,4 +97,7 @@ const TopProgramNum = styled.span`
   left: 30px;
   bottom: 0;
   z-index: 99099;
+`;
+const RowBox = styled.div`
+  margin-bottom: 15px;
 `;

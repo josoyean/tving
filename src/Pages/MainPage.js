@@ -1,5 +1,6 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { getRegExp } from "korean-regexp";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 // import styled from 'styled-components'
@@ -9,15 +10,20 @@ import Nav from "../components/Nav";
 import Row from "../components/Row";
 const MainPage = () => {
   const movePage = useNavigate();
+  const focusRef = useRef();
   const [program, setProgram] = useState([]);
-  const [mainProgram, setMainProgram] = useState([]);
+  const [mainPage, setMainPage] = useState(true);
+  const [searchProgram, setSearchProgram] = useState([]);
   const [onlyTvingProgram, setOnlyTvingProgram] = useState([]);
   const [movie, setMovie] = useState([]);
   const [drama, setDrama] = useState([]);
   const [entertainment, setEntertainment] = useState([]);
+  const [titleValue, setTitleValue] = useState("");
+
   useEffect(() => {
     fetchData();
     alert("작업중입니다. :)");
+    console.log(getRegExp("ㄱ"));
   }, []);
 
   const fetchData = async () => {
@@ -55,19 +61,86 @@ const MainPage = () => {
     setDrama(dramaArray);
   }, [program]);
 
+  const searchClick = () => {
+    setTitleValue("");
+    setMainPage(!mainPage);
+    setSearchProgram([]);
+  };
+  const TitleChange = (e) => {
+    setTitleValue(e.target.value);
+  };
+  useEffect(() => {
+    if (focusRef.current) {
+      // 할당한 DOM 요소가 불러지면 (마운트 되면)
+      focusRef.current.focus(); // focus 할당!
+    }
+  }, [mainPage]);
+
+  useEffect(() => {
+    if (titleValue === "") {
+      setSearchProgram([]);
+    } else {
+      const searchArray =
+        program &&
+        program.filter((item, index) => {
+          const text = item.title.replace(/\s/g, " ");
+          console.log(text.search(getRegExp(titleValue)));
+          return text.search(getRegExp(titleValue)) !== -1;
+        });
+      setSearchProgram(searchArray);
+    }
+  }, [titleValue]);
   return (
     <div>
-      <Nav top={true}></Nav>
-      <Banner program={program !== "" ? program : " "}></Banner>
-      <Row title="티빙 TOP 20 프로그램" id="top" program={program}></Row>
-      <Row
-        title="오직! TVING에서만!!"
-        id="only"
-        program={onlyTvingProgram}
-      ></Row>
-      <Row title="인기 예능" id="entertainment" program={entertainment}></Row>
-      <Row title="인기 드라마" id="drama" program={drama}></Row>
-      <Row title="인기 영화" id="movie" program={movie}></Row>
+      <Nav top={true} searchClick={searchClick} mainPage={mainPage}></Nav>
+      {mainPage === true ? (
+        <div>
+          <Banner program={program !== "" ? program : " "}></Banner>
+          <Row title="티빙 TOP 20 프로그램" id="top" program={program}></Row>
+          <Row
+            title="오직! TVING에서만!!"
+            id="only"
+            program={onlyTvingProgram}
+          ></Row>
+          <Row
+            title="인기 예능"
+            id="entertainment"
+            program={entertainment}
+          ></Row>
+          <Row title="인기 드라마" id="drama" program={drama}></Row>
+          <Row title="인기 영화" id="movie" program={movie}></Row>
+        </div>
+      ) : (
+        <div className="mainSearchWrap">
+          <div className="search-input">
+            <label>
+              <input
+                type="text"
+                className="text"
+                onChange={TitleChange}
+                placeholder="프로그램 제목을 입력해주세요."
+                value={titleValue}
+                ref={focusRef}
+              ></input>
+            </label>
+          </div>
+          <div className="box">
+            {searchProgram.length === 0 ? (
+              <span>프로그램 이름을 검색 해주세요.</span>
+            ) : (
+              <div className="search-box">
+                {searchProgram.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <img src={item.thumbnail} alt="searchProgram"></img>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -143,8 +143,14 @@
   transform: translateY(-50%);
 }
 .video-list > span.left {
-  left: 0;
+  left: 5px;
 }
 .video-list > span.right {
-  right: 0;
+  right: 5px;
+}
+.relate-box .row__posters > div {
+  padding-left: 35px;
+}
+.relate-box .row__posters > div > span {
+  display: none;
 }
