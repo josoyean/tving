@@ -260,7 +260,6 @@ button.tving-button i {
   letter-spacing: 0px;
   cursor: pointer;
   box-sizing: border-box;
-  /* background-color: #a3a3a3; */
 }
 .search-box i {
   background-image: url(/public/images/icon_search.svg);

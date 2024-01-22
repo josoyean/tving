@@ -23,7 +23,6 @@ const MainPage = () => {
   useEffect(() => {
     fetchData();
     alert("작업중입니다. :)");
-    console.log(getRegExp("ㄱ"));
   }, []);
 
   const fetchData = async () => {
@@ -84,7 +83,7 @@ const MainPage = () => {
         program &&
         program.filter((item, index) => {
           const text = item.title.replace(/\s/g, " ");
-          console.log(text.search(getRegExp(titleValue)));
+
           return text.search(getRegExp(titleValue)) !== -1;
         });
       setSearchProgram(searchArray);
