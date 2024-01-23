@@ -27,8 +27,9 @@ const Row = ({ title, id, program }) => {
     setModalOpen(true);
   };
 
-  const clickProgran = (topProgram, e) => {
+  const clickProgram = (topProgram, e) => {
     movePage("/tving/program", { state: topProgram });
+    // movePage("/tving/program", { state: topProgram, search: true });
   };
   return (
     <RowBox>
@@ -50,7 +51,7 @@ const Row = ({ title, id, program }) => {
                   <div
                     key={topProgram.id}
                     onClick={(e) => {
-                      clickProgran(topProgram, e);
+                      clickProgram(topProgram, e);
                     }}
                   >
                     <TopProgramNum>{numProgram + 1}</TopProgramNum>{" "}
@@ -99,5 +100,5 @@ const TopProgramNum = styled.span`
   z-index: 99099;
 `;
 const RowBox = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 `;

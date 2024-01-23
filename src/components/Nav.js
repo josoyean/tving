@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-const Nav = ({ top, searchClick, mainPage }) => {
+const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
   const [handleShow, setHandleShow] = useState(false);
   const [logoutShow, setLogoutShow] = useState(false);
   const movePage = useNavigate();
@@ -32,6 +32,7 @@ const Nav = ({ top, searchClick, mainPage }) => {
       movePage("/tving/main");
     } else if (location.pathname === "/tving/main") {
       movePage("/tving/main");
+      setMainPage(true);
     } else if (location.pathname === "/tving/index") {
       movePage("/tving/index");
     } else if (location.pathname === "/tving/login") {
@@ -42,6 +43,7 @@ const Nav = ({ top, searchClick, mainPage }) => {
   const profileClick = (e) => {
     e.stopPropagation();
     setLogoutShow(!logoutShow);
+    setMainPage(true);
   };
 
   const moveLoginPags = () => {

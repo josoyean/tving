@@ -54,6 +54,7 @@ const MainPage = () => {
         dramaArray.push(element);
       }
     }
+
     setMovie(movieArray);
     setOnlyTvingProgram(onlyArray);
     setEntertainment(entertainmentArray);
@@ -67,6 +68,10 @@ const MainPage = () => {
   };
   const TitleChange = (e) => {
     setTitleValue(e.target.value);
+  };
+  const programCilck = (e, item) => {
+    e.stopPropagation();
+    movePage("/tving/program", { state: item });
   };
   useEffect(() => {
     if (focusRef.current) {
@@ -82,8 +87,7 @@ const MainPage = () => {
       const searchArray =
         program &&
         program.filter((item, index) => {
-          const text = item.title.replace(/\s/g, " ");
-
+          const text = item.title.replace(/\s/g, "");
           return text.search(getRegExp(titleValue)) !== -1;
         });
       setSearchProgram(searchArray);
@@ -91,10 +95,18 @@ const MainPage = () => {
   }, [titleValue]);
   return (
     <div>
-      <Nav top={true} searchClick={searchClick} mainPage={mainPage}></Nav>
+      <Nav
+        top={true}
+        searchClick={searchClick}
+        mainPage={mainPage}
+        setMainPage={setMainPage}
+      ></Nav>
       {mainPage === true ? (
         <div>
-          <Banner program={program !== "" ? program : " "}></Banner>
+          <Banner
+            program={program !== "" ? program : " "}
+            programCilck={programCilck}
+          ></Banner>
           <Row title="티빙 TOP 20 프로그램" id="top" program={program}></Row>
           <Row
             title="오직! TVING에서만!!"
@@ -130,7 +142,12 @@ const MainPage = () => {
               <div className="search-box">
                 {searchProgram.map((item, index) => {
                   return (
-                    <div key={index}>
+                    <div
+                      key={index}
+                      onClick={(e) => {
+                        programCilck(e, item);
+                      }}
+                    >
                       <img src={item.thumbnail} alt="searchProgram"></img>
                     </div>
                   );

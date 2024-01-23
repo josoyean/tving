@@ -12,7 +12,7 @@ const ProgramInfor = () => {
   const [programData, setprogramData] = useState();
   const [contentsData, setContentsData] = useState();
   const [isLikeBtn, setIsLikeBtn] = useState(false);
-  // console.log("userInfo", userInfo);
+
   useEffect(() => {
     alert("작업중입니다.");
     fetchData();
@@ -37,7 +37,7 @@ const ProgramInfor = () => {
 
   return (
     <div>
-      <Nav top={true}></Nav>
+      <Nav top={true} mainPage={true} search={false}></Nav>
       <div className="main-box">
         <img alt="background" src={userInfo.background}></img>
         <div className="main-infor">
@@ -96,15 +96,16 @@ const ProgramInfor = () => {
           {"<"}
         </span>
         <div className="video-list-box" id="video-box">
-          {userInfo.videoList.map((item, index) => {
-            return (
-              <VideoComponert
-                key={index}
-                count={index + 1}
-                videoInfom={item}
-              ></VideoComponert>
-            );
-          })}
+          {userInfo.videoList &&
+            userInfo.videoList.map((item, index) => {
+              return (
+                <VideoComponert
+                  key={index}
+                  count={index + 1}
+                  videoInfom={item}
+                ></VideoComponert>
+              );
+            })}
         </div>
         <span
           className="right"
