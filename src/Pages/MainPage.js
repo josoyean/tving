@@ -4,28 +4,17 @@ import { getRegExp } from "korean-regexp";
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import ProgramPage from "./ProgramPage";
 // import styled from 'styled-components'
 import "../Pages/MainPage.css";
 import Nav from "../components/Nav";
-import Row from "../components/Row";
 const MainPage = () => {
   const movePage = useNavigate();
   const focusRef = useRef();
   const [program, setProgram] = useState([]);
   const [mainPage, setMainPage] = useState(true);
   const [searchProgram, setSearchProgram] = useState([]);
-  const [onlyTvingProgram, setOnlyTvingProgram] = useState([]);
-  const [movie, setMovie] = useState([]);
-  const [drama, setDrama] = useState([]);
-  const [entertainment, setEntertainment] = useState([]);
   const [titleValue, setTitleValue] = useState("");
-
-  const fetchData = async () => {
-    const apiUrl = "date.json";
-    const response = await axios.get(apiUrl);
-    setProgram(response.data.tvingList);
-    console.log("program", program);
-  };
 
   const getTestData = async () => {
     const { data } = await axios.get("date.json");
@@ -36,11 +25,6 @@ const MainPage = () => {
     queryFn: getTestData,
   });
 
-  useEffect(() => {
-    // fetchData();
-    // alert("작업중입니다. :)");
-  }, []);
-
   const searchClick = () => {
     setTitleValue("");
     setMainPage(!mainPage);
@@ -49,10 +33,7 @@ const MainPage = () => {
   const TitleChange = (e) => {
     setTitleValue(e.target.value);
   };
-  const programCilck = (e, item) => {
-    e.stopPropagation();
-    movePage("/tving/program", { state: item });
-  };
+
   useEffect(() => {
     if (focusRef.current) {
       // 할당한 DOM 요소가 불러지면 (마운트 되면)
@@ -65,8 +46,8 @@ const MainPage = () => {
       setSearchProgram([]);
     } else {
       const searchArray =
-        program &&
-        program.filter((item, index) => {
+        data &&
+        data.filter((item, index) => {
           const text = item.title.replace(/\s/g, "");
           return text.search(getRegExp(titleValue)) !== -1;
         });
@@ -74,44 +55,12 @@ const MainPage = () => {
     }
   }, [titleValue]);
 
-  useEffect(() => {
-    // setProgram(data);
-    // console.log("안녕", data);
-    // if (program) {
-    let onlyArray = [];
-    let movieArray = [];
-    let entertainmentArray = [];
-    let dramaArray = [];
-    for (let index = 0; index < data.length; index++) {
-      const element = data[index];
-
-      if (element.only === true) {
-        onlyArray.push(element);
-      }
-
-      if (element.type === "예능") {
-        entertainmentArray.push(element);
-      }
-
-      if (element.type === "영화") {
-        movieArray.push(element);
-      }
-
-      if (element.type === "드라마") {
-        dramaArray.push(element);
-      }
-    }
-
-    setMovie(movieArray);
-    setOnlyTvingProgram(onlyArray);
-    setEntertainment(entertainmentArray);
-    setDrama(dramaArray);
-    // console.log(drama);
-    // }
-  }, []);
+  const programCilck = (e, item) => {
+    e.stopPropagation();
+    movePage("/tving/program", { state: { select: item, all: data } });
+  };
 
   if (data) {
-    console.log("안녕", data);
     return (
       <div>
         <Nav
@@ -121,25 +70,11 @@ const MainPage = () => {
           setMainPage={setMainPage}
         ></Nav>
         {mainPage === true ? (
-          <div>
-            {/* <Banner
-              program={program && program}
-              programCilck={programCilck}
-            ></Banner> */}
-            <Row title="티빙 TOP 20 프로그램" id="top" program={program}></Row>
-            <Row
-              title="오직! TVING에서만!!"
-              id="only"
-              program={onlyTvingProgram}
-            ></Row>
-            <Row
-              title="인기 예능"
-              id="entertainment"
-              program={entertainment}
-            ></Row>
-            <Row title="인기 드라마" id="drama" program={drama}></Row>
-            <Row title="인기 영화" id="movie" program={movie}></Row>
-          </div>
+          <ProgramPage
+            data={data}
+            program={program}
+            programCilck={programCilck}
+          ></ProgramPage>
         ) : (
           <div className="mainSearchWrap">
             <div className="search-input">

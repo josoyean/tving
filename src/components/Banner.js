@@ -10,12 +10,9 @@ import { Swiper, SwiperSlide } from "swiper/react"; // basic
 import "./Banner.css";
 
 const Banner = ({ program, programCilck }) => {
-  const [movie, setMovie] = useState([]);
   const [mainProgram, setMainProgram] = useState([]);
-  const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
-    console.log("program", program);
     let pensByColors = program.sort((a, b) => {
       return b.date - a.date;
     });
@@ -40,50 +37,31 @@ const Banner = ({ program, programCilck }) => {
     return bannerSlierImg;
   };
 
-  if (isClicked) {
-    return (
-      <div>
-        <Container>
-          <HomeContainer>
-            <Iframe
-              src={`https://www.youtube.com/embed/${movie.videos.results[0].key}?controls=0&autoplay=1&loop=1&mute=1&playlist=${movie.videos.results[0].key}`}
-              width="640"
-              height="360"
-              frameBorder="0"
-              allow="autoplay; fullscreen"
-            ></Iframe>
-          </HomeContainer>
-        </Container>
-        <button onClick={() => setIsClicked(false)}>x</button>
+  return (
+    <div className="banner__contents">
+      <div className="swiper">
+        <Swiper
+          loop={true}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={{ delay: 7000, speed: 5000, disableOnInteraction: false }}
+          spaceBetween={0}
+          slidesPerView={1}
+          slidesPerGroup={1}
+          pagination={{ clickable: true }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          className="mySwiper"
+        >
+          {mainProgram == "" ? null : bannerSlier(mainProgram)}
+        </Swiper>
+        <div className="swiper-pagination"></div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
       </div>
-    );
-  } else {
-    return (
-      <div className="banner__contents">
-        <div className="swiper">
-          <Swiper
-            loop={true}
-            modules={[Navigation, Pagination, Autoplay]}
-            autoplay={{ delay: 7000, speed: 5000, disableOnInteraction: false }}
-            spaceBetween={0}
-            slidesPerView={1}
-            slidesPerGroup={1}
-            pagination={{ clickable: true }}
-            navigation={{
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            }}
-            className="mySwiper"
-          >
-            {mainProgram == "" ? null : bannerSlier(mainProgram)}
-          </Swiper>
-          <div className="swiper-pagination"></div>
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
-        </div>
-      </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default Banner;

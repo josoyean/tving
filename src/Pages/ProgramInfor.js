@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import "../Pages/ProgramInfor.css";
@@ -9,48 +8,41 @@ import VideoComponert from "../components/VideoComponert";
 const ProgramInfor = () => {
   const location = useLocation();
   const userInfo = { ...location.state };
-  const [programData, setprogramData] = useState();
+
   const [contentsData, setContentsData] = useState();
   const [isLikeBtn, setIsLikeBtn] = useState(false);
-
-  useEffect(() => {
-    alert("작업중입니다.");
-    fetchData();
-  }, []);
 
   const LikeClick = (e) => {
     setIsLikeBtn(!isLikeBtn);
   };
-  const fetchData = async () => {
-    const apiUrl = "date.json";
-    const response = await axios.get(apiUrl);
-    setprogramData(response.data.tvingList);
-  };
+
   useEffect(() => {
+    alert("작업중입니다.");
+    console.log("userInfo", userInfo.select);
     const result =
-      programData &&
-      programData.filter((item) => {
+      userInfo.all &&
+      userInfo.all.filter((item) => {
         return item.genre === userInfo.genre;
       });
     setContentsData(result);
-  }, [programData]);
+  }, []);
 
   return (
     <div>
       <Nav top={true} mainPage={true} search={false}></Nav>
       <div className="main-box">
-        <img alt="background" src={userInfo.background}></img>
+        <img alt="background" src={userInfo.select.background}></img>
         <div className="main-infor">
-          <span className="title">{userInfo.title}</span>
+          <span className="title">{userInfo.select.title}</span>
           <div className="infor">
-            <span className={userInfo.channel === "" ? "hide" : null}>
-              {userInfo.channel}
+            <span className={userInfo.select.channel === "" ? "hide" : null}>
+              {userInfo.select.channel}
             </span>
-            <span className={userInfo.genre === "" ? "hide" : null}>
-              {userInfo.genre}
+            <span className={userInfo.select.genre === "" ? "hide" : null}>
+              {userInfo.select.genre}
             </span>
-            <span className={userInfo.type === "" ? "hide" : null}>
-              {userInfo.type}
+            <span className={userInfo.select.type === "" ? "hide" : null}>
+              {userInfo.select.type}
             </span>
           </div>
           <div className="button-box">
@@ -79,10 +71,10 @@ const ProgramInfor = () => {
               <span>좋아요</span>
             </button>
           </div>
-          <span className="inform-text">{userInfo.subtitle}</span>
+          <span className="inform-text">{userInfo.select.subtitle}</span>
         </div>
         <div className="thumbnail">
-          <img alt="thumbnail" src={userInfo.thumbnail}></img>
+          <img alt="thumbnail" src={userInfo.select.thumbnail}></img>
         </div>
       </div>
       <div className="video-list">
@@ -96,8 +88,8 @@ const ProgramInfor = () => {
           {"<"}
         </span>
         <div className="video-list-box" id="video-box">
-          {userInfo.videoList &&
-            userInfo.videoList.map((item, index) => {
+          {userInfo.select.videoList &&
+            userInfo.select.videoList.map((item, index) => {
               return (
                 <VideoComponert
                   key={index}

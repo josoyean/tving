@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "../components/Row.css";
 import ModalIndex from "./MovieModal/ModalIndex";
-const Row = ({ title, id, program }) => {
+const Row = ({ title, id, program, programCilck }) => {
   const [topProgram, setTopProgram] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
   const [movieSelected, setMovieSelected] = useState({});
@@ -29,6 +29,7 @@ const Row = ({ title, id, program }) => {
 
   const clickProgram = (topProgram, e) => {
     movePage("/tving/program", { state: topProgram });
+    // movePage("/tving/program", { state: { select: topProgram, all: data } });
     // movePage("/tving/program", { state: topProgram, search: true });
   };
   return (
@@ -51,7 +52,7 @@ const Row = ({ title, id, program }) => {
                   <div
                     key={topProgram.id}
                     onClick={(e) => {
-                      clickProgram(topProgram, e);
+                      programCilck(e, topProgram);
                     }}
                   >
                     <TopProgramNum>{numProgram + 1}</TopProgramNum>{" "}
