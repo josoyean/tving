@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import DetailPage from "./Pages/DetailPage";
 import Login from "./Pages/Login";
@@ -8,15 +8,6 @@ import MainPage from "./Pages/MainPage";
 import ProgramInfor from "./Pages/ProgramInfor";
 import SearchPage from "./Pages/SearchPage";
 import JoinPage from "./Pages/joinPage";
-import Nav from "./components/Nav";
-const Layout = () => {
-  return (
-    <div>
-      <Nav></Nav>
-      <Outlet></Outlet>
-    </div>
-  );
-};
 
 function App() {
   return (
@@ -31,7 +22,6 @@ function App() {
         <Route path="search" element={<SearchPage />}></Route>
         <Route path="tving/join" element={<JoinPage />}></Route>
         <Route path="tving/program" element={<ProgramInfor />}></Route>
-        {/* </Route> */}
       </Routes>
     </div>
   );

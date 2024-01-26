@@ -15,6 +15,7 @@ const Banner = ({ program, programCilck }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
+    console.log("program", program);
     let pensByColors = program.sort((a, b) => {
       return b.date - a.date;
     });
