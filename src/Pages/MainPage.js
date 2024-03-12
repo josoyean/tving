@@ -36,8 +36,7 @@ const MainPage = () => {
 
   useEffect(() => {
     if (focusRef.current) {
-      // 할당한 DOM 요소가 불러지면 (마운트 되면)
-      focusRef.current.focus(); // focus 할당!
+      focusRef.current.focus();
     }
   }, [mainPage]);
 

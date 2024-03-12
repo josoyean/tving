@@ -1,117 +1,92 @@
-.login-wrap input {
-    border: 0px;
-    outline: none;
-    width: calc(100% - 30px);
-    background-color: #212121;
-    height: 100%;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: inherit;
-}
-
-.login-wrap input::placeholder {
-    color: #ababab;
-}
-
-.login-wrap button {
-    width: 30px;
-    border: 0px;
-    outline: none;
-    height: 30px;
-    display: none;
-    background-color: transparent;
-}
-
 .button-wrap {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .close-icon {
-    background-image: url(/public/images/close-icon.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(/public/images/close-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .button-wrap .eyes-icon {
-    background-image: url(/public/images/eyes-icon.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 5px;
+  background-image: url(/public/images/eyes-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 5px;
 }
 
 .button-wrap .eyes-icon.on {
-    background-image: url(/public/images/eyes-icon-on.svg);
+  background-image: url(/public/images/eyes-icon-on.svg);
 }
 
 .id-icon {
-    display: none;
+  display: none;
 }
 
 .auto-login {
-    display: flex;
-    width: 505px;
+  display: flex;
+  width: 505px;
 }
 
 .auto-login label {
-    color: #6e6e6e;
-    font-size: 15px;
-    user-select: none;
-    font-weight: bold;
-    padding-left: 30px;
-    position: relative;
+  color: #6e6e6e;
+  font-size: 15px;
+  user-select: none;
+  font-weight: bold;
+  padding-left: 30px;
+  position: relative;
 }
 
 input[type="checkbox"] {
-    appearance: none;
+  appearance: none;
 }
 
 .auto-login label::before {
-    position: absolute;
-    display: block;
-    content: '';
-    left: 0;
-    top: 0;
-    background-color: #ababab;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-image: url(/public/images/check-off.svg);
-    background-position: center;
-    background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: #ababab;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: url(/public/images/check-off.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.auto-login input[type="checkbox"]:checked+label {
-    color: #fff;
+.auto-login input[type="checkbox"]:checked + label {
+  color: #fff;
 }
 
-.auto-login input[type="checkbox"]:checked+label::before {
-    background-image: url(/public/images/check-on.svg);
-    background-color: #ff1744;
-
+.auto-login input[type="checkbox"]:checked + label::before {
+  background-image: url(/public/images/check-on.svg);
+  background-color: #ff1744;
 }
 
 button.doLoginBtn {
-    margin-top: 10px;
-    border: #ff153c;
-    background-color: #ff153c;
-    width: 505px;
-    height: 60px;
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center;
-    border-radius: 3px;
-    color: #fff;
-    font-weight: 800;
+  margin-top: 10px;
+  border: #ff153c;
+  background-color: #ff153c;
+  width: 505px;
+  height: 60px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 800;
 }
-.singup-box{
-    color: #6e6e6e;
-    text-align: center;
-    margin-top: 25px;
+.singup-box {
+  color: #6e6e6e;
+  text-align: center;
+  margin-top: 25px;
 }
-.singup-box a{
-    color: #a3a3a3;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 30px;
+.singup-box a {
+  color: #a3a3a3;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 30px;
 }
