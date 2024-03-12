@@ -13,6 +13,8 @@ function Login() {
   useEffect(() => {}, []);
 
   const redirect = window.location.href.split("/tving/login")[0];
+  console.log(redirect);
+  console.log(process.env.REACT_APP_REDIRECT_URI);
 
   const Preparing = () => {
     alert("회원 가입하고 로그인 하시거나 빈 값으로 로그인 해주세요.");
