@@ -11,9 +11,12 @@ export default function KakoRedirectPage() {
   const REDIRECT_URI = `${process.env.REACT_APP_REDIRECT_URI}`;
   const navigate = useNavigate();
 
+  useEffect(() => {}, []);
+
   useEffect(() => {
     axios
       .post(
+        // `https://kauth.kakao.com/oauth/token?grant_type=${grant_type}&client_id=${client_id}&redirect_uri${"http://localhost:3000/tving/oauth/callback/kakao"}&code=${KAKAO_CODE}&client_secret=${client_secret}`,
         `https://kauth.kakao.com/oauth/token?grant_type=${grant_type}&client_id=${client_id}&redirect_uri${REDIRECT_URI}&code=${KAKAO_CODE}&client_secret=${client_secret}`,
         {},
         {
@@ -39,6 +42,7 @@ export default function KakoRedirectPage() {
           )
           .then((res) => {
             navigate("/main");
+
             // navigate("/tving/main");
             localStorage.removeItem("id");
             localStorage.removeItem("data");

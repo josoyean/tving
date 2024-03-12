@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "../Pages/Login.css";
 import Nav from "../components/Nav";
@@ -8,13 +9,10 @@ function Login() {
   const [eyesIcon, setEyesIcon] = useState(true);
   const [autoLogin, setautoLogin] = useState(false);
   const [userInfor, setUserInfor] = useState([]);
+  const navigate = useNavigate();
   // const REST_API_KEY = "025f1869f3e0be84b87f557a1cb18429";
   // const REDIRECT_URI = "http://localhost:3000/oauth/callback/kakao";
   // const redirect = window.location.href.split("/tving/login")[0];
-  useEffect(() => {
-    localStorage.removeItem("location");
-    localStorage.setItem("location", JSON.stringify(window.location.origin));
-  }, []);
 
   const Preparing = () => {
     alert("회원 가입하고 로그인 하시거나 빈 값으로 로그인 해주세요.");
