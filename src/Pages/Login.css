@@ -68,15 +68,15 @@ input[type="checkbox"] {
 
 button.doLoginBtn {
   margin-top: 10px;
-  border: #ff153c;
-  background-color: #ff153c;
+  border: #fee500;
+  background-color: #fee500;
   width: 505px;
   height: 60px;
   font-size: 17px;
   font-weight: bold;
   text-align: center;
   border-radius: 3px;
-  color: #fff;
+  color: #000000;
   font-weight: 800;
 }
 .singup-box {

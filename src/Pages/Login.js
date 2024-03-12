@@ -21,8 +21,7 @@ function Login() {
   const ChangeCheck = (e) => {
     setautoLogin(e.target.checked);
   };
-  console.log("안녕3", redirect + process.env.REACT_APP_REDIRECT_URI);
-  // const KAKAO_AUTO_URL = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&scope=profile_nickname,profile_image,`;
+
   const KAKAO_AUTO_URL = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${
     process.env.REACT_APP_REST_API_KEY
   }&redirect_uri=${
@@ -36,10 +35,10 @@ function Login() {
     <div>
       <Nav top={false}></Nav>
       <LoginWrap>
-        <LoginTitle>TVING ID 로그인</LoginTitle>
+        <LoginTitle>TVING 카카오톡 로그인</LoginTitle>
 
         <button className="doLoginBtn" onClick={kakaoLogin}>
-          로그인하기
+          카카오톡으로 로그인하기
         </button>
       </LoginWrap>
     </div>
