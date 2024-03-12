@@ -13,6 +13,7 @@ import Nav from "../components/Nav";
 
 const LoginPage = () => {
   const movePage = useNavigate();
+  console.log("안녕");
   const MainPageMove = () => {
     movePage("/login");
   };

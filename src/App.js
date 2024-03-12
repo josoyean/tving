@@ -10,19 +10,15 @@ import SearchPage from "./Pages/SearchPage";
 import JoinPage from "./Pages/joinPage";
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        {/* <Route path="/" element={<Layout />}> */}
-        <Route path="/" element={<LoginPage />}></Route>
-        <Route path="oauth/callback/kakao" element={<KakoRedirectPage />} />
-        <Route path="/index" element={<LoginPage />}></Route>
-        <Route path="/main" element={<MainPage />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="search" element={<SearchPage />}></Route>
-        <Route path="/join" element={<JoinPage />}></Route>
-        <Route path="/program" element={<ProgramInfor />}></Route>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<LoginPage />}></Route>
+      <Route path="/oauth/callback/kakao" element={<KakoRedirectPage />} />
+      <Route path="/main" element={<MainPage />}></Route>
+      <Route path="/login" element={<Login />}></Route>
+      <Route path="/search" element={<SearchPage />}></Route>
+      <Route path="/join" element={<JoinPage />}></Route>
+      <Route path="/program" element={<ProgramInfor />}></Route>
+    </Routes>
   );
 }
 
