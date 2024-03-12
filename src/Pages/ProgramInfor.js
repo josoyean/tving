@@ -8,7 +8,7 @@ import VideoComponert from "../components/VideoComponert";
 const ProgramInfor = () => {
   const location = useLocation();
   const userInfo = { ...location.state };
-
+  const [mainPage, setMainPage] = useState(true);
   const [contentsData, setContentsData] = useState();
   const [isLikeBtn, setIsLikeBtn] = useState(false);
 
@@ -18,7 +18,6 @@ const ProgramInfor = () => {
 
   useEffect(() => {
     alert("작업중입니다.");
-    console.log("userInfo", userInfo.select);
     const result =
       userInfo.all &&
       userInfo.all.filter((item) => {
@@ -29,7 +28,12 @@ const ProgramInfor = () => {
 
   return (
     <div>
-      <Nav top={true} mainPage={true} search={false}></Nav>
+      <Nav
+        top={true}
+        mainPage={true}
+        search={false}
+        setMainPage={setMainPage}
+      ></Nav>
       <div className="main-box">
         <img alt="background" src={userInfo.select.background}></img>
         <div className="main-infor">

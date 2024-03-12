@@ -6,7 +6,6 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
   const [logoutShow, setLogoutShow] = useState(false);
   const movePage = useNavigate();
   const location = useLocation();
-
   useEffect(() => {
     window.addEventListener("scroll", function () {
       if (window.scrollY > 72) {
@@ -28,15 +27,15 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
   }, []);
 
   const logoClick = (e) => {
-    if (location.pathname === "/tving/program") {
-      movePage("/tving/main");
-    } else if (location.pathname === "/tving/main") {
-      movePage("/tving/main");
+    if (location.pathname === "/program") {
+      movePage("/main");
+    } else if (location.pathname === "/main") {
+      movePage("/main");
       setMainPage(true);
-    } else if (location.pathname === "/tving/index") {
-      movePage("/tving/index");
-    } else if (location.pathname === "/tving/login") {
-      movePage("/tving/index");
+    } else if (location.pathname === "/index") {
+      movePage("/");
+    } else if (location.pathname === "/login") {
+      movePage("/");
     }
   };
 
@@ -48,7 +47,7 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
 
   const moveLoginPags = () => {
     setLogoutShow(false);
-    movePage("/tving/login");
+    movePage("/login");
   };
 
   if (top) {

@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import DetailPage from "./Pages/DetailPage";
 import KakoRedirectPage from "./Pages/KakoRedirectPage";
 import Login from "./Pages/Login";
 import LoginPage from "./Pages/LoginPage";
@@ -15,14 +14,13 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Layout />}> */}
         <Route path="/" element={<LoginPage />}></Route>
-        <Route path="/oauth/callback/kakao" element={<KakoRedirectPage />} />
-        <Route path="tving/index" element={<LoginPage />}></Route>
-        <Route path="tving/main" element={<MainPage />}></Route>
-        <Route path="tving/login" element={<Login />}></Route>
-        <Route path=":movieId" element={<DetailPage />}></Route>
+        <Route path="oauth/callback/kakao" element={<KakoRedirectPage />} />
+        <Route path="/index" element={<LoginPage />}></Route>
+        <Route path="/main" element={<MainPage />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="search" element={<SearchPage />}></Route>
-        <Route path="tving/join" element={<JoinPage />}></Route>
-        <Route path="tving/program" element={<ProgramInfor />}></Route>
+        <Route path="/join" element={<JoinPage />}></Route>
+        <Route path="/program" element={<ProgramInfor />}></Route>
       </Routes>
     </div>
   );

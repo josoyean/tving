@@ -8,9 +8,7 @@ export default function KakoRedirectPage() {
   const grant_type = "authorization_code";
   const client_id = `${process.env.REACT_APP_REST_API_KEY}`;
   const client_secret = "BfBuPh9NYOL8UiR7lHgHf25u24l4RCzk";
-  const REDIRECT_URI = `${window.location.href.split("/")[0]}${
-    process.env.REACT_APP_REDIRECT_URI
-  }`;
+  const REDIRECT_URI = `${process.env.REACT_APP_REDIRECT_URI}`;
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -40,8 +38,10 @@ export default function KakoRedirectPage() {
             }
           )
           .then((res) => {
-            navigate("/tving/main");
-            localStorage.clear();
+            navigate("/main");
+            // navigate("/tving/main");
+            localStorage.removeItem("id");
+            localStorage.removeItem("data");
             localStorage.setItem("id", res.data.id);
             localStorage.setItem("data", JSON.stringify(res.data));
           })

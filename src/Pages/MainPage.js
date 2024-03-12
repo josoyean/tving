@@ -56,9 +56,8 @@ const MainPage = () => {
 
   const programCilck = (e, item) => {
     e.stopPropagation();
-    movePage("/tving/program", { state: { select: item, all: data } });
+    movePage("/program", { state: { select: item, all: data } });
   };
-
   if (data) {
     return (
       <div>

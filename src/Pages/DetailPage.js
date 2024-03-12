@@ -1,17 +1,13 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const DetailPage = () => {
   const movePage = useNavigate();
-  useEffect(()=>{
-    console.log('/tving/index')
-    movePage('/tving/index');
-    
-  },[])
+  useEffect(() => {
+    movePage("/index");
+  }, []);
 
-  return (
-    <div>DetailPages</div>
-  )
-}
+  return <div>DetailPages</div>;
+};
 
-export default DetailPage
+export default DetailPage;
