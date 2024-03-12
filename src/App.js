@@ -9,6 +9,7 @@ import ProgramInfor from "./Pages/ProgramInfor";
 import SearchPage from "./Pages/SearchPage";
 import JoinPage from "./Pages/joinPage";
 function App() {
+  console.log(process.env.PUBLIC_URL);
   return (
     <Routes>
       <Route path="/" element={<LoginPage />}></Route>
