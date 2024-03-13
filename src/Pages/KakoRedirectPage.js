@@ -42,10 +42,7 @@ export default function KakoRedirectPage() {
           )
           .then((res) => {
             navigate("/main");
-
-            // navigate("/tving/main");
-            localStorage.removeItem("id");
-            localStorage.removeItem("data");
+            localStorage.clear();
             localStorage.setItem("id", res.data.id);
             localStorage.setItem("data", JSON.stringify(res.data));
           })

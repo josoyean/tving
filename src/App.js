@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import KakoRedirectPage from "./Pages/KakoRedirectPage";
 import Login from "./Pages/Login";
@@ -11,20 +11,17 @@ import JoinPage from "./Pages/joinPage";
 function App() {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<LoginPage />}></Route>
           <Route path="/main" element={<MainPage />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/search" element={<SearchPage />}></Route>
           <Route path="/join" element={<JoinPage />}></Route>
-          <Route
-            path="/tving/oauth/callback/kakao"
-            element={<KakoRedirectPage />}
-          />
+          <Route path="/oauth/callback/kakao" element={<KakoRedirectPage />} />
           <Route path="/program" element={<ProgramInfor />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
