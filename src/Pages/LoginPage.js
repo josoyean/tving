@@ -13,7 +13,6 @@ import Nav from "../components/Nav";
 
 const LoginPage = () => {
   const movePage = useNavigate();
-  console.log("안녕");
   const MainPageMove = () => {
     movePage("/login");
   };
@@ -53,7 +52,6 @@ const LoginPage = () => {
                 className="tving-button"
                 onClick={MainPageMove}
               >
-                {" "}
                 <i className="play-icon"></i>지금 바로, 티빙을 플레이 하세요!
               </button>
             </div>
