@@ -9,7 +9,7 @@ import ProgramInfor from "./Pages/ProgramInfor";
 import SearchPage from "./Pages/SearchPage";
 import JoinPage from "./Pages/joinPage";
 function App() {
-  console.log("/tving/oauth/callback/kakao");
+  console.log("/oauth/callback/kakao");
   return (
     <>
       <HashRouter>
@@ -19,10 +19,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/search" element={<SearchPage />}></Route>
           <Route path="/join" element={<JoinPage />}></Route>
-          <Route
-            path="/tving/oauth/callback/kakao"
-            element={<KakoRedirectPage />}
-          />
+          <Route path="/oauth/callback/kakao" element={<KakoRedirectPage />} />
           <Route path="/program" element={<ProgramInfor />}></Route>
         </Routes>
       </HashRouter>
