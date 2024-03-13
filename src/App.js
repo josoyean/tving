@@ -18,7 +18,10 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/search" element={<SearchPage />}></Route>
           <Route path="/join" element={<JoinPage />}></Route>
-          <Route path="/oauth/callback/kakao" element={<KakoRedirectPage />} />
+          <Route
+            path="/tving/oauth/callback/kakao"
+            element={<KakoRedirectPage />}
+          />
           <Route path="/program" element={<ProgramInfor />}></Route>
         </Routes>
       </BrowserRouter>
