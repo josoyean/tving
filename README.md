@@ -1,4 +1,4 @@
-[🔗](https://saltsoyeon.tistory.com/58)
+[🔗블로그보기](https://saltsoyeon.tistory.com/58)
 
 ## **Intor**
 
@@ -42,15 +42,6 @@ main.js
 <Link to="/"> </Link>
 ```
 
-'react-router-dom'를 설치 후에 BrowserRouter, Route, Routes 추가
-
-BrowserRouter - 꼭 Route,Routes 태그를 감싸야된다. 동적 페이지에 사용
-
-Route - path에는 경로, element는 보여주고 싶은 컴포넌트를 넣으면 된다.
-
-Routes - 여러 Route를 감싸서 그 중에서 해당되는 Route를 렌더링 해주는 역할
-
-Link - a태그라고 생각하면 된다. to에는 Link를 클릭시 이동하고 싶은 경로를 넣으면 됨 
 
 리액트 라우터를 공부하다가 BrowserRouter,HashRouter를 알게 되었는데 BrowserRouter는 서버에 있는 데이터들을 스크립트에 의해 가공 처리한 후 생성되어 전달되는 웹페이지에 적합하고, HashRouter는 미리 저장된 페이지가 그대로 보여지는 웹페이지에 적합 합니다. 저는 동적인 페이지를 제작할 예정이라 BrowserRouter를 사용했습니다.
 
@@ -63,7 +54,6 @@ Link - a태그라고 생각하면 된다. to에는 Link를 클릭시 이동하�
 
 #### 3) 카카오톡 로그인 연동
 
-[https://saltsoyeon.tistory.com/46](https://saltsoyeon.tistory.com/46)
 
  [\[React\] 카톡 로그인 구현
 
