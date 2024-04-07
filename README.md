@@ -56,9 +56,6 @@ main.js
 
 #### 3) 카카오톡 로그인 연동
 
-
- [\[React\] 카톡 로그인 구현
-
 ![2024-04-074 11 39-ezgif com-speed](https://github.com/josoyean/weather-alert/assets/31685570/d5fe47c9-7bcc-4187-b826-668f48e3ffb3)
 
 
