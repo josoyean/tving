@@ -1,4 +1,6 @@
-[🔗블로그보기](https://saltsoyeon.tistory.com/58)
+[🔗](https://saltsoyeon.tistory.com/58)
+**블로그 바로가기**
+
 
 ## **Intor**
 
@@ -57,9 +59,8 @@ main.js
 
  [\[React\] 카톡 로그인 구현
 
-카톡 로그인 구현은 우선 에서 애플리케이션을 추가해야 합니다. 추가후 앱키는 드래그 이용해서 복사 하지말고 옆에 복사하기 버튼 이용해서 복사하기 uri는 /로컬주소/oauth/callback/kakao 입력! 로
+![2024-04-074 11 39-ezgif com-speed](https://github.com/josoyean/weather-alert/assets/31685570/d5fe47c9-7bcc-4187-b826-668f48e3ffb3)
 
-saltsoyeon.tistory.com](https://saltsoyeon.tistory.com/46)
 
  캐치테이블에 적용할때도 오래 걸렸지만 성공해서 동일하게 넣으면 되겠지 라는 생각으로 티빙도 적용했지만 오류가 떠서 마음처럼 잘 되지 않았다. 앱키 , Redirect URI은 .env에 넣고 깃 푸시를 하게 되면 깃에서는 앱키가 없어서 작용이 안되는걸 인식하고 블로그 글에서 시크릿 세팅에서 앱키 , Redirect URI 값을 적용하면 된다는 글을 보고 적용을 했는데 오류도 안뜨고 위 gif처럼 잘 적용이 되는것을 알수있다.
 
