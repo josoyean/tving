@@ -10,9 +10,6 @@ function Login() {
   const [autoLogin, setautoLogin] = useState(false);
   const [userInfor, setUserInfor] = useState([]);
   const navigate = useNavigate();
-  // const REST_API_KEY = "025f1869f3e0be84b87f557a1cb18429";
-  // const REDIRECT_URI = "http://localhost:3000/tving/oauth/kakao/callback";
-  // const redirect = window.location.href.split("/tving/login")[0];
 
   const Preparing = () => {
     alert("회원 가입하고 로그인 하시거나 빈 값으로 로그인 해주세요.");
@@ -23,7 +20,7 @@ function Login() {
   };
   // console.log(process.env.REACT_APP_REDIRECT_URI);
   console.log(".env사용 안함");
-  // const KAKAO_AUTO_URL = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&scope=profile_nickname,profile_image`;
+
   const KAKAO_AUTO_URL = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${process.env.REACT_APP_REST_API_KEY}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&scope=profile_nickname,profile_image`;
   const kakaoLogin = () => {
     window.location.href = KAKAO_AUTO_URL;

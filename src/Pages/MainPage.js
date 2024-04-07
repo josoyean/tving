@@ -1,9 +1,8 @@
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 import { getRegExp } from "korean-regexp";
 import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import instance from "../api/axios";
 import ProgramPage from "./ProgramPage";
 // import styled from 'styled-components'
 import "../Pages/MainPage.css";
@@ -16,14 +15,20 @@ const MainPage = () => {
   const [searchProgram, setSearchProgram] = useState([]);
   const [titleValue, setTitleValue] = useState("");
 
-  const getTestData = async () => {
-    const { data } = await axios.get("date.json");
-    return data;
-  };
-  const { data } = useQuery({
-    queryKey: ["test"],
-    queryFn: getTestData,
-  });
+  // console.log("안녕");
+  useEffect(() => {
+    instance
+      .get()
+      .then((res) => {
+        console.log("res", res);
+        setProgram(res.data);
+      })
+      .catch((err) => {
+        console.log("err", err);
+      });
+
+    // console.log("program", program);
+  }, []);
 
   const searchClick = () => {
     setTitleValue("");
@@ -45,8 +50,8 @@ const MainPage = () => {
       setSearchProgram([]);
     } else {
       const searchArray =
-        data &&
-        data.filter((item, index) => {
+        program &&
+        program.filter((item, index) => {
           const text = item.title.replace(/\s/g, "");
           return text.search(getRegExp(titleValue)) !== -1;
         });
@@ -56,9 +61,10 @@ const MainPage = () => {
 
   const programCilck = (e, item) => {
     e.stopPropagation();
-    movePage("/program", { state: { select: item, all: data } });
+    movePage("/program", { state: { select: item, all: program } });
   };
-  if (data) {
+  console.log("program", program);
+  if (program) {
     return (
       <div>
         <Nav
@@ -69,7 +75,7 @@ const MainPage = () => {
         ></Nav>
         {mainPage === true ? (
           <ProgramPage
-            data={data}
+            data={program}
             program={program}
             programCilck={programCilck}
           ></ProgramPage>

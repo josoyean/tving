@@ -12,6 +12,8 @@ function ProgramPage({ data, program, programCilck }) {
     let movieArray = [];
     let entertainmentArray = [];
     let dramaArray = [];
+    console.log("data", data);
+    console.log("program", program);
     for (let index = 0; index < data.length; index++) {
       const element = data[index];
 
@@ -36,11 +38,11 @@ function ProgramPage({ data, program, programCilck }) {
     setOnlyTvingProgram(onlyArray);
     setEntertainment(entertainmentArray);
     setDrama(dramaArray);
-  }, []);
+  }, [program]);
 
   return (
     <div>
-      <Banner program={data} programCilck={programCilck}></Banner>
+      <Banner program={program} programCilck={programCilck}></Banner>
       <Row
         title="티빙 TOP 10 프로그램"
         id="top"
