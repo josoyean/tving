@@ -12,8 +12,7 @@ function ProgramPage({ data, program, programCilck }) {
     let movieArray = [];
     let entertainmentArray = [];
     let dramaArray = [];
-    console.log("data", data);
-    console.log("program", program);
+
     for (let index = 0; index < data.length; index++) {
       const element = data[index];
 
