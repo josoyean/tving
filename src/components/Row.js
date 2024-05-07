@@ -19,7 +19,6 @@ const Row = ({ title, id, program, programCilck }) => {
 
   useEffect(() => {
     fetchMovieData();
-    // console.log("program", program);
   }, [program]);
 
   const hendleClick = (movie) => {

@@ -914,3 +914,12 @@ button.tving-button i {
     overflow-y: scroll !important;
   }
 }
+iframe,
+.youtube-player {
+  width: 100vw;
+  height: 100vh;
+}
+
+.youtube-player .ytp-chrome-top {
+  display: none;
+}

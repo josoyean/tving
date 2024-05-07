@@ -5,6 +5,7 @@ import KakoRedirectPage from "./Pages/KakoRedirectPage";
 import Login from "./Pages/Login";
 import LoginPage from "./Pages/LoginPage";
 import MainPage from "./Pages/MainPage";
+import PlayerPage from "./Pages/PlayerPage";
 import ProgramInfor from "./Pages/ProgramInfor";
 import SearchPage from "./Pages/SearchPage";
 import JoinPage from "./Pages/joinPage";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/join" element={<JoinPage />}></Route>
           <Route path="/oauth/kakao/callback" element={<KakoRedirectPage />} />
           <Route path="/program" element={<ProgramInfor />}></Route>
+          <Route path="/player" element={<PlayerPage />}></Route>
         </Routes>
       </BrowserRouter>
     </>

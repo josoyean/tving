@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Nav from "../components/Nav";
 import Row from "../components/Row";
 import VideoComponert from "../components/VideoComponert";
 
 const ProgramInfor = () => {
   const location = useLocation();
+  const navigator = useNavigate();
   const userInfo = { ...location.state };
   const [mainPage, setMainPage] = useState(true);
   const [contentsData, setContentsData] = useState();
@@ -24,7 +25,9 @@ const ProgramInfor = () => {
       });
     setContentsData(result);
   }, []);
-
+  const playPageMove = (select, index) => {
+    navigator("/player", { state: select.videoList[index].videoKey });
+  };
   return (
     <div>
       <Nav
@@ -49,7 +52,12 @@ const ProgramInfor = () => {
             </span>
           </div>
           <div className="button-box">
-            <button className="play-btn">
+            <button
+              className="play-btn"
+              onClick={() => {
+                playPageMove(userInfo.select, 0);
+              }}
+            >
               <span>1화 시청하기</span>
             </button>
             <button
@@ -98,6 +106,9 @@ const ProgramInfor = () => {
                   key={index}
                   count={index + 1}
                   videoInfom={item}
+                  click={() => {
+                    playPageMove(userInfo.select, index);
+                  }}
                 ></VideoComponert>
               );
             })}

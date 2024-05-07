@@ -7,7 +7,6 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
   const movePage = useNavigate();
   const location = useLocation();
 
-  console.log("안녕");
   useEffect(() => {
     window.addEventListener("scroll", function () {
       if (window.scrollY > 72) {

@@ -13,7 +13,6 @@ const MainPage = () => {
   const [searchProgram, setSearchProgram] = useState([]);
   const [titleValue, setTitleValue] = useState("");
 
-  // console.log("안녕");
   useEffect(() => {
     instance
       .get()
@@ -24,8 +23,6 @@ const MainPage = () => {
       .catch((err) => {
         console.log("err", err);
       });
-
-    // console.log("program", program);
   }, []);
 
   const searchClick = () => {
