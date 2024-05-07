@@ -19,8 +19,3 @@ i.icon {
   height: 24px;
   background-size: 100%;
 }
-
-#root > div {
-  max-width: 1920px;
-  min-width: 1280px;
-}

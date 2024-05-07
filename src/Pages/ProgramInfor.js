@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "../Pages/ProgramInfor.css";
 import Nav from "../components/Nav";
 import Row from "../components/Row";
 import VideoComponert from "../components/VideoComponert";

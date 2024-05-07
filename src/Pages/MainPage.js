@@ -3,10 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import instance from "../api/axios";
-import ProgramPage from "./ProgramPage";
-// import styled from 'styled-components'
-import "../Pages/MainPage.css";
 import Nav from "../components/Nav";
+import ProgramPage from "./ProgramPage";
 const MainPage = () => {
   const movePage = useNavigate();
   const focusRef = useRef();

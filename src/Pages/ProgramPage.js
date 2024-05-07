@@ -40,7 +40,7 @@ function ProgramPage({ data, program, programCilck }) {
   }, [program]);
 
   return (
-    <div>
+    <div className="center">
       <Banner program={program} programCilck={programCilck}></Banner>
       <Row
         title="티빙 TOP 10 프로그램"

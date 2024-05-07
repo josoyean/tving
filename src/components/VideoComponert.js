@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import "../Pages/ProgramInfor.css";
 function VideoComponert({ videoInfom, count }) {
   // console.log("videoInfom", videoInfom);
   return (

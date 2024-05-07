@@ -1,8 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import "../components/Row.css";
-import ModalIndex from "./MovieModal/ModalIndex";
+import ModalIndex from "./ModalIndex";
 const Row = ({ title, id, program, programCilck }) => {
   const [topProgram, setTopProgram] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
@@ -29,8 +28,6 @@ const Row = ({ title, id, program, programCilck }) => {
 
   const clickProgram = (topProgram, e) => {
     movePage("/tving/program", { state: topProgram });
-    // movePage("/tving/program", { state: { select: topProgram, all: data } });
-    // movePage("/tving/program", { state: topProgram, search: true });
   };
   return (
     <RowBox>
@@ -96,7 +93,7 @@ const TopProgramNum = styled.span`
   font-size: 65px;
   font-weight: bolder;
   position: absolute;
-  left: 30px;
+  left: 15px;
   bottom: 0;
   z-index: 99099;
 `;

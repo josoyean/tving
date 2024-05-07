@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import "../Pages/Login.css";
 import Nav from "../components/Nav";
 function Login() {
   const [idValue, setId] = useState("");

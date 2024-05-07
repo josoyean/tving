@@ -6,6 +6,8 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
   const [logoutShow, setLogoutShow] = useState(false);
   const movePage = useNavigate();
   const location = useLocation();
+
+  console.log("안녕");
   useEffect(() => {
     window.addEventListener("scroll", function () {
       if (window.scrollY > 72) {
@@ -55,7 +57,7 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
       <MainNavWrapper
         className={`mainNav${handleShow} ${
           logoutShow ? "mainNavtrue" : "mainNavfalse"
-        }`}
+        } center`}
       >
         <div className="nav-left">
           <Logo>
@@ -89,7 +91,7 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
     );
   } else {
     return (
-      <NavWrapper className={"nav" + handleShow}>
+      <NavWrapper className={"nav" + handleShow + " center"}>
         <Logo>
           <img
             alt="Logo"

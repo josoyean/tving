@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
-import "../Pages/LoginPage.css";
 import Nav from "../components/Nav";
 
 const LoginPage = () => {
