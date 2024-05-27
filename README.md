@@ -10,7 +10,7 @@ ott를 시청을 좋아하고 내가 자주 보고 좋아하는 사이트를 클
 
 editot - VScode
 
-lang - react, html ,css, javascript, npm, styled-components, react-router
+lang - react, html ,css, javascript, npm, styled-components, react-router, redux
 
 배포 - github.io
 
