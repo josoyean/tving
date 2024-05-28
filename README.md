@@ -16,7 +16,7 @@ lang - react, html ,css, javascript, npm, styled-components, react-router, redux
 
 ## **개발 기간**
 
-2023.08 ~ 진행중
+2023.08 ~ 2023.12
 
 ## **구현 기능**
 
