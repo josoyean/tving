@@ -6,7 +6,8 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
   const [logoutShow, setLogoutShow] = useState(false);
   const movePage = useNavigate();
   const location = useLocation();
-
+  const userData = JSON.parse(localStorage.getItem("data"))?.kakao_account
+    .profile.profile_image_url;
   useEffect(() => {
     window.addEventListener("scroll", function () {
       if (window.scrollY > 72) {
@@ -46,9 +47,10 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
     setMainPage(true);
   };
 
-  const moveLoginPags = () => {
+  const moveLoginPage = () => {
     setLogoutShow(false);
     movePage("/login");
+    localStorage.clear();
   };
 
   if (top) {
@@ -58,34 +60,38 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
           logoutShow ? "mainNavtrue" : "mainNavfalse"
         } center`}
       >
-        <div className="nav-left">
-          <Logo>
-            <img
-              alt="Logo"
-              src={process.env.PUBLIC_URL + `/images/nav-logo.svg`}
-              onClick={(e) => {
-                logoClick(e);
-              }}
-            />
-          </Logo>
-        </div>
-        <div className="nav-right">
-          <div className="search-box" onClick={searchClick}>
-            <i className={`icon ${mainPage ? "" : "close"}`}></i>
+        <div className="">
+          <div className="nav-left">
+            <Logo>
+              <img
+                alt="Logo"
+                src={process.env.PUBLIC_URL + `/images/nav-logo.svg`}
+                onClick={(e) => {
+                  logoClick(e);
+                }}
+              />
+            </Logo>
           </div>
-          <div className="profile-wrap" onClick={(e) => profileClick(e)}>
-            <img
-              alt="profile"
-              src={process.env.PUBLIC_URL + `/images/profile.jpg`}
-            ></img>
+          <div className="nav-right">
+            <div className="search-box" onClick={searchClick}>
+              <i className={`icon ${mainPage ? "" : "close"}`}></i>
+            </div>
+            <div className="profile-wrap" onClick={(e) => profileClick(e)}>
+              <img
+                alt="profile"
+                src={`
+                ${localStorage.getItem("data") && userData}
+                `}
+              ></img>
+            </div>
           </div>
-        </div>
 
-        {logoutShow && (
-          <div className="logout-box" onClick={moveLoginPags}>
-            <span>로그아웃</span>
-          </div>
-        )}
+          {logoutShow && (
+            <div className="logout-box" onClick={moveLoginPage}>
+              <span>로그아웃</span>
+            </div>
+          )}
+        </div>
       </MainNavWrapper>
     );
   } else {
@@ -98,9 +104,6 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
             onClick={(e) => {
               logoClick(e);
             }}
-            // onClick={() => {
-            //   window.location.href = "/tving/login";
-            // }}
           />
         </Logo>
       </NavWrapper>
@@ -115,14 +118,12 @@ const NavWrapper = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  /* background-color: ${(props) => (props.show ? "#fff" : "#000")}; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   padding: 0 36px;
   letter-spacing: 16px;
-  /* position: relative; */
   z-index: 99999;
   height: 72px;
   padding: 0 calc(3.5vw + 5px);
@@ -134,14 +135,15 @@ const MainNavWrapper = styled.nav`
   box-sizing: border-box;
   left: 0;
   right: 0;
-  /* background-color: ${(props) => (props.show ? "transparent" : "#000")}; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 36px;
   letter-spacing: 16px;
   z-index: 99999;
-  height: 72px;
+  & > div {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 const Logo = styled.a`
   padding: 0;

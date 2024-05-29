@@ -26,7 +26,9 @@ const Row = ({ title, id, program, programCilck }) => {
   };
 
   const clickProgram = (topProgram, e) => {
-    movePage("/tving/program", { state: topProgram });
+    e.stopPropagation();
+    // movePage("/program", { state: { select: item, all: program } });
+    // movePage("/tving/program", { state: topProgram });
   };
   return (
     <RowBox>
