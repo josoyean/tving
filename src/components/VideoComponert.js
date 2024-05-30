@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 function VideoComponert({ videoInfom, count, click }) {
-  // console.log("videoInfom", videoInfom);
   return (
     <VideoBox
       className="video-box"

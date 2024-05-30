@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "swiper/css";
@@ -8,13 +9,28 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
+import { fetchDataSuccess } from "../action/dataActions";
+import instance from "../api/axios";
 import Nav from "../components/Nav";
-
-const LoginPage = () => {
+const IndexPage = () => {
+  const dispatch = useDispatch();
   const movePage = useNavigate();
+  const programs = useSelector((state) => state);
   const MainPageMove = () => {
     movePage("/login");
+    // movePage("/main");
   };
+
+  useEffect(() => {
+    instance
+      .get()
+      .then((res) => {
+        dispatch(fetchDataSuccess(res.data));
+      })
+      .catch((err) => {
+        console.log("err", err);
+      });
+  }, [dispatch]);
 
   const swiperImg = (swiperNum) => {
     const imgNum = [];
@@ -34,7 +50,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
+    <div className="index-wrap">
       <Nav top={false}></Nav>
       <div className="login-wrap">
         <section className="loginContaner" id="section-0">
@@ -198,7 +214,7 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default IndexPage;
 
 const Message1 = styled.nav`
   text-align: center;

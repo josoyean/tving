@@ -17,8 +17,6 @@ function Login() {
   const ChangeCheck = (e) => {
     setautoLogin(e.target.checked);
   };
-  // console.log(process.env.REACT_APP_REDIRECT_URI);
-  console.log(".env사용 안함");
 
   const KAKAO_AUTO_URL = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${process.env.REACT_APP_REST_API_KEY}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&scope=profile_nickname,profile_image`;
   const kakaoLogin = () => {

@@ -96,7 +96,7 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
     );
   } else {
     return (
-      <NavWrapper className={"nav" + handleShow + " center"}>
+      <NavWrapper className={"nav" + handleShow}>
         <Logo>
           <img
             alt="Logo"

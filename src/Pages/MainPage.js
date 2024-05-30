@@ -1,29 +1,18 @@
 import { getRegExp } from "korean-regexp";
 import React, { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import instance from "../api/axios";
 import Nav from "../components/Nav";
 import ProgramPage from "./ProgramPage";
 const MainPage = () => {
   const movePage = useNavigate();
   const focusRef = useRef();
-  const [program, setProgram] = useState([]);
   const [mainPage, setMainPage] = useState(true);
   const [searchProgram, setSearchProgram] = useState([]);
   const [titleValue, setTitleValue] = useState("");
-
-  useEffect(() => {
-    instance
-      .get()
-      .then((res) => {
-        console.log("res", res);
-        setProgram(res.data);
-      })
-      .catch((err) => {
-        console.log("err", err);
-      });
-  }, []);
+  const dispatch = useDispatch();
+  const program = useSelector((state) => state.data);
 
   const searchClick = () => {
     setTitleValue("");
@@ -58,7 +47,7 @@ const MainPage = () => {
     e.stopPropagation();
     movePage("/program", { state: { select: item, all: program } });
   };
-  console.log("program", program);
+  // console.log("program", program);
   if (program) {
     return (
       <div>
