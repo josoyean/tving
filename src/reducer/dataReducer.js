@@ -1,5 +1,5 @@
 const initialState = {
-  data: [],
+  data: null,
   // 기타 초기 상태
 };
 const dataReducer = (state = initialState, action) => {

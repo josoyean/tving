@@ -315,18 +315,27 @@ input[type="checkbox"] {
   background-color: #ff1744;
 }
 
-button.doLoginBtn {
-  margin-top: 10px;
+i.doLoginBtn {
   border: #fee500;
   background-color: #fee500;
-  width: 505px;
-  height: 60px;
-  font-size: 17px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
-  border-radius: 3px;
   color: #000000;
+  background-image: url(/public/images/logo-kakao.png);
   font-weight: 800;
+}
+i.doLoginBtn.google {
+  background-color: #fff;
+  background-image: url(/public/images/logo-google.png);
+  border: #fff;
+  background-size: 35px;
+}
+.join-wrap i {
+  background-image: url(/public/images/x.svg);
 }
 .singup-box {
   color: #6e6e6e;
@@ -563,10 +572,10 @@ button.tving-button i {
   column-gap: 26px;
 }
 .nav-right .profile-wrap {
-  width: 26px;
-  border-radius: 4px;
+  width: 30px;
+  border-radius: 50%;
   overflow: hidden;
-  height: 26px;
+  height: 30px;
 }
 .nav-right .profile-wrap img {
   width: 100%;

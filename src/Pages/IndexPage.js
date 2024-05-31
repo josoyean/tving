@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
@@ -9,8 +9,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react"; // basic
-import { fetchDataSuccess } from "../action/dataActions";
-import instance from "../api/axios";
 import Nav from "../components/Nav";
 const IndexPage = () => {
   const dispatch = useDispatch();
@@ -18,19 +16,7 @@ const IndexPage = () => {
 
   const MainPageMove = () => {
     movePage("/login");
-    // movePage("/main");
   };
-
-  useEffect(() => {
-    instance
-      .get()
-      .then((res) => {
-        dispatch(fetchDataSuccess(res.data));
-      })
-      .catch((err) => {
-        console.log("err", err);
-      });
-  }, [dispatch]);
 
   const swiperImg = (swiperNum) => {
     const imgNum = [];

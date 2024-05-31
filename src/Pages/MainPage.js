@@ -3,8 +3,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { fetchDataSuccess } from "../action/dataActions";
+import instance from "../api/axios";
 import Nav from "../components/Nav";
 import ProgramPage from "./ProgramPage";
+
 const MainPage = () => {
   const movePage = useNavigate();
   const focusRef = useRef();
@@ -22,7 +25,19 @@ const MainPage = () => {
   const TitleChange = (e) => {
     setTitleValue(e.target.value);
   };
-
+  useEffect(() => {
+    instance
+      .get()
+      .then((res) => {
+        dispatch(fetchDataSuccess(res.data));
+      })
+      .catch((err) => {
+        console.log("err", err);
+      });
+  }, [dispatch]);
+  useEffect(() => {
+    console.log("program", program);
+  }, [program]);
   useEffect(() => {
     if (focusRef.current) {
       focusRef.current.focus();

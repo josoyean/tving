@@ -42,11 +42,10 @@ export default function KakoRedirectPage() {
             }
           )
           .then((res) => {
-            console.log("program", program);
             localStorage.clear();
             localStorage.setItem("id", res.data.id);
             localStorage.setItem("data", JSON.stringify(res.data));
-            // navigate("/main");
+            navigate("/main");
           })
           .catch((error) => {
             console.log("2번쨰 error", error);

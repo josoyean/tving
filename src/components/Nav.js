@@ -1,9 +1,11 @@
+import { getAuth, signOut } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
   const [handleShow, setHandleShow] = useState(false);
   const [logoutShow, setLogoutShow] = useState(false);
+  const auth = getAuth();
   const movePage = useNavigate();
   const location = useLocation();
   const userData = JSON.parse(localStorage.getItem("data"))?.kakao_account
@@ -49,8 +51,20 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
 
   const moveLoginPage = () => {
     setLogoutShow(false);
-    movePage("/login");
-    localStorage.clear();
+    if (!localStorage.getItem("data")) {
+      const auth = getAuth();
+      signOut(auth)
+        .then(() => {
+          movePage("/login");
+          // Sign-out successful.
+        })
+        .catch((error) => {
+          // An error happened.
+        });
+    } else {
+      localStorage.clear();
+      movePage("/login");
+    }
   };
 
   if (top) {
@@ -80,7 +94,11 @@ const Nav = ({ top, searchClick, mainPage, setMainPage, search }) => {
               <img
                 alt="profile"
                 src={`
-                ${localStorage.getItem("data") && userData}
+                ${
+                  localStorage.getItem("data")
+                    ? userData
+                    : `${process.env.PUBLIC_URL + `/images/favicon.jpg`}`
+                }
                 `}
               ></img>
             </div>
