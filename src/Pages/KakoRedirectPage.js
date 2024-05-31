@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 export default function KakoRedirectPage() {
-  console.log("안녕카톡");
+  const program = useSelector((state) => state.data);
   const PARAMS = new URL(document.location).searchParams;
   const KAKAO_CODE = PARAMS.get("code");
   const grant_type = "authorization_code";
@@ -41,10 +42,11 @@ export default function KakoRedirectPage() {
             }
           )
           .then((res) => {
+            console.log("program", program);
             localStorage.clear();
             localStorage.setItem("id", res.data.id);
             localStorage.setItem("data", JSON.stringify(res.data));
-            navigate("/main");
+            // navigate("/main");
           })
           .catch((error) => {
             console.log("2번쨰 error", error);

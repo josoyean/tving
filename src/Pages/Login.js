@@ -21,6 +21,7 @@ function Login() {
   const KAKAO_AUTO_URL = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${process.env.REACT_APP_REST_API_KEY}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&scope=profile_nickname,profile_image`;
   const kakaoLogin = () => {
     // navigate("/main");
+
     window.location.href = KAKAO_AUTO_URL;
   };
 
