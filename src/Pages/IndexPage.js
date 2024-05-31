@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import "swiper/css";
@@ -15,7 +15,7 @@ import Nav from "../components/Nav";
 const IndexPage = () => {
   const dispatch = useDispatch();
   const movePage = useNavigate();
-  const programs = useSelector((state) => state);
+
   const MainPageMove = () => {
     movePage("/login");
     // movePage("/main");

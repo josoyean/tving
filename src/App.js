@@ -34,7 +34,6 @@ function App() {
       <Route path="/" element={<IndexPage />}></Route>
       <Route path="/main" element={<MainPage />}></Route>
       <Route path="/login" element={<Login />}></Route>
-      {/* <Route path="/search" element={<SearchPage />}></Route> */}
       <Route path="/join" element={<JoinPage />}></Route>
       <Route path="/oauth/kakao/callback" element={<KakoRedirectPage />} />
       <Route path="/program" element={<ProgramInfor />}></Route>
